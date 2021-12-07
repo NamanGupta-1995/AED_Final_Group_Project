@@ -15,7 +15,7 @@ import java.util.Date;
  */
 public class UserAccount {
     
-    private String name;
+    private String username;
     private String password;
     private Employee employee;
     private Role role;
@@ -30,6 +30,10 @@ public class UserAccount {
     private boolean isAvailable;
     private boolean isAvailableForBloodDonation;
 
+     public UserAccount() {
+        workQueue = new WorkQueue();
+    } 
+     
     public boolean isIsAvailableForBloodDonation() {
         return isAvailableForBloodDonation;
     }
@@ -93,17 +97,13 @@ public class UserAccount {
     public void setQualification(String qualification) {
         this.qualification = qualification;
     }
-
-    public Account() {
-        workQueue = new WorkQueue();
-    } 
     
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -142,7 +142,7 @@ public class UserAccount {
     
     @Override
     public String toString() {
-        return name;
+        return username;
     }
     
     

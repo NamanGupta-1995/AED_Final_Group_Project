@@ -7,31 +7,103 @@ package Business.UserAccount;
 import Business.Employee.Employee;
 import Business.Role.Role;
 import Business.WorkQueue.WorkQueue;
+import java.util.Date;
 
 /**
  *
- * @author raunak
+ * @author GarimaC
  */
 public class UserAccount {
     
-    private String username;
+    private String name;
     private String password;
     private Employee employee;
     private Role role;
     private WorkQueue workQueue;
+    private String contact;
+    private String userAddress;
+    private String qualification;
+    private String userProfile;
+    private int age;
+    //public Date date;
+    private String gender;
+    private boolean isAvailable;
+    private boolean isAvailableForBloodDonation;
 
-    public UserAccount() {
+    public boolean isIsAvailableForBloodDonation() {
+        return isAvailableForBloodDonation;
+    }
+
+    public void setIsAvailableForBloodDonation(boolean isAvailableForBloodDonation) {
+        this.isAvailableForBloodDonation = isAvailableForBloodDonation;
+    }
+
+    public boolean isIsAvailable() {
+        return isAvailable;
+    }
+
+    public void setIsAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }  
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getUserProfile() {
+        return userProfile;
+    }
+
+    public void setUserProfile(String userProfile) {
+        this.userProfile = userProfile;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public String getUserAddress() {
+        return userAddress;
+    }
+
+    public void setUserAddress(String userAddress) {
+        this.userAddress = userAddress;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public Account() {
         workQueue = new WorkQueue();
-    }
+    } 
     
-    
-    
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -62,11 +134,15 @@ public class UserAccount {
         return workQueue;
     }
 
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+
     
     
     @Override
     public String toString() {
-        return username;
+        return name;
     }
     
     

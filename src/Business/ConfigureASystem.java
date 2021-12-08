@@ -6,11 +6,10 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author rrheg
+ * @author garima
  */
 public class ConfigureASystem {
-    
-    public static EcoSystem configure(){
+        public static EcoSystem configure(){
         
         EcoSystem system = EcoSystem.getInstance();
         
@@ -21,7 +20,7 @@ public class ConfigureASystem {
         //create user account
         
         
-        Employee employee = system.getEmployeeDirectory().createEmployee("RRH");
+        Employee employee = system.getEmployeeDirectory().createEmployee(1,"sysadmin");
         
         UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         

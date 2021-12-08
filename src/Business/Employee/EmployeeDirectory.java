@@ -8,24 +8,24 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author garima
  */
 public class EmployeeDirectory {
     
-    private ArrayList<Employee> employeeList;
+    private ArrayList<Employee> listOfEmployees;
 
     public EmployeeDirectory() {
-        employeeList = new ArrayList();
+        listOfEmployees = new ArrayList();
     }
 
-    public ArrayList<Employee> getEmployeeList() {
-        return employeeList;
+    public ArrayList<Employee> getListOfEmployees() {
+        return listOfEmployees;
     }
     
-    public Employee createEmployee(String name){
-        Employee employee = new Employee();
+    public Employee createEmployee(int employeeId, String name){
+        Employee employee = new Employee(employeeId);
         employee.setName(name);
-        employeeList.add(employee);
+        listOfEmployees.add(employee);
         return employee;
     }
 }

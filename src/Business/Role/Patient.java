@@ -9,7 +9,7 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.AdministrativeRole.AdminWorkAreaJPanel;
@@ -23,7 +23,7 @@ public class Patient extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem ecosystem,
-            Network network, DonorDirectory donorDirectory) {
+            Network network, DonorsDirectory donorDirectory) {
         return new PatientJPanel(userProcessContainer, enterprise);
     }
 

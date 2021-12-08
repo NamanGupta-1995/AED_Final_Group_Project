@@ -12,7 +12,7 @@ import Business.Organization.Facilities;
 import Business.Organization.Medical;
 import Business.Organization.OrganManagement;
 import Business.Organization.Organization;
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import userinterface.ProcurementTeamRole.ProcurementTeamJPanel;
 import javax.swing.JPanel;
@@ -26,7 +26,7 @@ public class ProcurementTeam extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, 
             Enterprise enterprise, EcoSystem ecosystem,
-            Network network, DonorDirectory donorDirectory) {
+            Network network, DonorsDirectory donorDirectory) {
         return new ProcurementTeamJPanel(userProcessContainer,userAccount, (Facilities)organization, enterprise,
                 ecosystem, network);
     }

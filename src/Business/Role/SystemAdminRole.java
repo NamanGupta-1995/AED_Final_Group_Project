@@ -4,7 +4,7 @@
  */
 package Business.Role;
 
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -21,7 +21,7 @@ public class SystemAdminRole extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem ecosystem,
-            Network network,  DonorDirectory donorDirectory) {
+            Network network,  DonorsDirectory donorDirectory) {
         return new SystemAdminWorkAreaJPanel(userProcessContainer, ecosystem);
     }
     

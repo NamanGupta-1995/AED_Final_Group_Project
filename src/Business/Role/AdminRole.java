@@ -5,7 +5,7 @@
  */
 package Business.Role;
 
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -24,7 +24,7 @@ import userinterface.AdministrativeRole.OrganBankJPanel;
 public class AdminRole extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network, DonorDirectory donorDirectory) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network, DonorsDirectory donorDirectory) {
         JPanel jp;
         if(enterprise.getClass().getTypeName().contains("HospitalEnterprise")){
             jp=new HospitalAdminJPanel(userProcessContainer, enterprise, business,network);

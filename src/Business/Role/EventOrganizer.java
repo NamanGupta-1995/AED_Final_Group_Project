@@ -5,7 +5,7 @@
  */
 package Business.Role;
 
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -25,7 +25,7 @@ import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
 public class EventOrganizer extends Role{
      @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
-            Network network, DonorDirectory donorDirectory) {
+            Network network, DonorsDirectory donorDirectory) {
         return new EventOrganizerWorkAreaJPanel(userProcessContainer, userAccount,(AwarnessCampaign) org, ecosystem);
     }
     

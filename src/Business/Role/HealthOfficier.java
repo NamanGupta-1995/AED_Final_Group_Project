@@ -11,7 +11,7 @@ import Business.Network.Network;
 import Business.Organization.Medical;
 import Business.Organization.Organization;
 import Business.Organization.PoliciesAndFinance;
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
@@ -25,7 +25,7 @@ public class HealthOfficier extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
-            Network network, DonorDirectory donorDirectory) {
+            Network network, DonorsDirectory donorDirectory) {
         return new HealthOfficerJPanel(userProcessContainer,userAccount,
                 (PoliciesAndFinance)org, enterprise,ecosystem, network);
     }

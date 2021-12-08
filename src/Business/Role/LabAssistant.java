@@ -11,7 +11,7 @@ import Business.Network.Network;
 import Business.Organization.Diagnostics;
 import Business.Organization.Organization;
 import Business.Organization.Therapists;
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.LabAssistantRole.DiagnosticsWorkArea;
@@ -25,7 +25,7 @@ public class LabAssistant extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem ecosystem, Network network, 
-            DonorDirectory donorDirectory) {
+            DonorsDirectory donorDirectory) {
          return new DiagnosticsWorkArea(userProcessContainer, userAccount, (Diagnostics)organization,ecosystem,enterprise);
     }
     

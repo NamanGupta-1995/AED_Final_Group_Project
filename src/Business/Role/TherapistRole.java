@@ -10,7 +10,7 @@ import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Organization.Therapists;
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.TherapistRole.TherapistWorkAreaJPanel;
@@ -24,7 +24,7 @@ public class TherapistRole extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, 
             Organization organization, Enterprise enterprise, 
-            EcoSystem business, Network network, DonorDirectory donorDirectory) {
+            EcoSystem business, Network network, DonorsDirectory donorDirectory) {
          return new TherapistWorkAreaJPanel(userProcessContainer, userAccount, (Therapists)organization, enterprise,business, network);
     }
     

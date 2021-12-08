@@ -4,7 +4,7 @@
  */
 package Business.Role;
 
-import Business.Person.DonorDirectory;
+import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -54,7 +54,7 @@ public abstract class Role {
             Enterprise enterprise, 
             EcoSystem business,
             Network network,
-            DonorDirectory donorDirectory);
+            DonorsDirectory donorDirectory);
 
     @Override
     public String toString() {

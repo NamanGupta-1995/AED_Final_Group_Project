@@ -10,21 +10,21 @@ import java.util.List;
 
 /**
  *
- * @author mruna
+ * @author garima
  */
 public class PersonDirectory {
-    List<Person> personList;
+    List<Person> listOfPersons;
     
     PersonDirectory(){
-       personList = new ArrayList<Person>();
+       listOfPersons = new ArrayList<Person>();
     }
 
-    public List<Person> getPersonList() {
-        return personList;
+    public List<Person> getListOfPersons() {
+        return listOfPersons;
     }
 
-    public void setPersonList(List<Person> personList) {
-        this.personList = personList;
+    public void setListOfPersons(List<Person> listOfPersons) {
+        this.listOfPersons = listOfPersons;
     }
     
     

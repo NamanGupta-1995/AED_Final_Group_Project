@@ -5,7 +5,7 @@
 package Business.Organization;
 
 import Business.Employee.EmployeeDirectory;
-import Business.Person.PatientDirectory;
+import Business.Person.PatientsDirectory;
 import Business.Role.Role;
 import Business.UserAccount.UserAccountDirectory;
 import Business.WorkQueue.WorkQueue;
@@ -21,8 +21,8 @@ public abstract class Organization {
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
-    private PatientDirectory patientDirectory;
-    private int organizationID;
+    private PatientsDirectory patientDirectory;
+    private int orgID;
     private static int count=0;
     private Type orgType;
 
@@ -37,12 +37,13 @@ public abstract class Organization {
         User("User"),
         Therapist("Therapist");
         
-        private String orgValue;
+        private String value;
+        
         private Type(String value) {
-            this.orgValue = value;
+            this.value = value;
         }
-        public String getOrgValue() {
-            return orgValue;
+        public String getValue() {
+            return value;
         }
     }
 
@@ -51,8 +52,8 @@ public abstract class Organization {
         workQueue = new WorkQueue();
         employeeDirectory = new EmployeeDirectory();
         userAccountDirectory = new UserAccountDirectory();
-        patientDirectory=new PatientDirectory();
-        organizationID = count;
+        patientDirectory=new PatientsDirectory();
+        orgID = count;
         ++count;
     }
 
@@ -70,8 +71,8 @@ public abstract class Organization {
         return userAccountDirectory;
     }
 
-    public int getOrganizationID() {
-        return organizationID;
+    public int getOrgID() {
+        return orgID;
     }
 
     public EmployeeDirectory getEmployeeDirectory() {
@@ -86,11 +87,11 @@ public abstract class Organization {
         this.orgName = orgName;
     }
 
-    public PatientDirectory getPatientDirectory() {
+    public PatientsDirectory getPatientDirectory() {
         return patientDirectory;
     }
 
-    public void setPatientDirectory(PatientDirectory patientDirectory) {
+    public void setPatientDirectory(PatientsDirectory patientDirectory) {
         this.patientDirectory = patientDirectory;
     }
 

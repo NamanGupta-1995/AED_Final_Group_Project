@@ -13,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author garima
  */
-public class Enterprise {
+public abstract class Enterprise extends Organization{
      private EnterpriseType type;
     private OrganizationDirectory organizationDirectory;
 
@@ -51,7 +51,7 @@ public class Enterprise {
     
     public Enterprise(String name,EnterpriseType type){
         super(name);
-        this.type=type;
+        this.type = type;
         organizationDirectory=new OrganizationDirectory();
     }
 }

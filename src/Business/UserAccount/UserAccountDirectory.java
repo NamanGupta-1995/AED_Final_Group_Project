@@ -40,9 +40,8 @@ public class UserAccountDirectory {
         account.setPassword(password);
         account.setEmployee(emp);
         account.setRole(userRole);
-        //userAccount.setDate(date);
         if(accountList.contains(account)){
-           // JOptionPane.showMessageDialog(null, "Username Already Exists Please try anothe username");
+           JOptionPane.showMessageDialog(null, "Username Already Exists Please try anothe username");
         }else{
         accountList.add(account);
         }
@@ -63,7 +62,6 @@ public class UserAccountDirectory {
         account.setIsAvailable(availabile);
         account.setQualification(qualification);
         account.setIsAvailableForBloodDonation(bloodAvailability);
-        //userAccount.setDate(date);
         accountList.add(account);
         return account;
     }
@@ -76,7 +74,8 @@ public class UserAccountDirectory {
         return true;
     }
 
-    public void createUserAccount(String userName, String password, String phNum, String Address, String qalString, String file_path) {
+    public void createUserAccount(String userName, String password, String contact, 
+            String address, String qualification, String file_path) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }       

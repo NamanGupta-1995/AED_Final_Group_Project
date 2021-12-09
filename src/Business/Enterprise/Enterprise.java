@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -9,12 +9,14 @@ import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
 import Business.Role.Role;
 import java.util.ArrayList;
+
 /**
  *
- * @author garima
+ * @author namangupta
  */
 public abstract class Enterprise extends Organization{
-     private EnterpriseType type;
+    
+    private EnterpriseType enterpriseType;
     private OrganizationDirectory organizationDirectory;
 
     public OrganizationDirectory getOrganizationDirectory() {
@@ -24,34 +26,34 @@ public abstract class Enterprise extends Organization{
     public enum EnterpriseType{
         Hospital("Hospital"),
         OrganBank("Organ Bank"),
-        Government("Government"),
-        Therapy("Therapy");
+        NGO("NGO"),
+        Physio("Physio");
 
-        private String value;
+        private String type;
         
-        private EnterpriseType(String value){
-            this.value=value;
+        private EnterpriseType(String type){
+            this.type=type;
         }
-        public String getValue() {
-            return value;
+        public String getType() {
+            return type;
         }
         @Override
         public String toString(){
-        return value;
+        return type;
     }
     }
 
     public EnterpriseType getEnterpriseType() {
-        return type;
+        return enterpriseType;
     }
 
     public void setEnterpriseType(EnterpriseType enterpriseType) {
-        this.type = enterpriseType;
+        this.enterpriseType = enterpriseType;
     }
     
     public Enterprise(String name,EnterpriseType type){
         super(name);
-        this.type = type;
+        this.enterpriseType=type;
         organizationDirectory=new OrganizationDirectory();
     }
 }

@@ -9,7 +9,7 @@ import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.AwarnessCampaign;
+import Business.Organization.AwarnessEvent;
 //import Business.Organization.AwarnessEventManagementOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
@@ -26,7 +26,7 @@ public class EventOrganizer extends Role{
      @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
-        return new EventOrganizerWorkAreaJPanel(userProcessContainer, userAccount,(AwarnessCampaign) org, ecosystem);
+        return new EventOrganizerWorkAreaJPanel(userProcessContainer, userAccount,(AwarnessEvent) org, ecosystem);
     }
     
 }

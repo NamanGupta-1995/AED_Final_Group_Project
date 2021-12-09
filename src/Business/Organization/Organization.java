@@ -33,7 +33,7 @@ public abstract class Organization {
         Facilities("Facilities"),
         OrganManagement("Organ Management"),
         PoliciesFinance("Policies and Finance"),
-        AwarnessCampaign("Awarness Campaign"),
+        AwarnessEvent("Awarness Event"),
         User("User"),
         Therapist("Therapist");
         
@@ -65,7 +65,7 @@ public abstract class Organization {
         this.orgType = orgType;
     }
     
-    public abstract ArrayList<Role> getSupportedRole();
+    public abstract ArrayList<Role> getRole();
     
     public UserAccountDirectory getUserAccountDirectory() {
         return userAccountDirectory;

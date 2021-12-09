@@ -13,22 +13,23 @@ import java.util.ArrayList;
  *
  * @author garima
  */
-public class AwarnessCampaign extends Organization {
+public class AwarnessEvent extends Organization {
 
-    public AwarnessCampaign(String campName){
-        super(campName);
+   public AwarnessEvent(String name){
+        super(name);
 
     }
 
-    @Override
-    public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> role = new ArrayList();
-        role.add(new EventOrganizer());
-        return role;
+   @Override
+    public ArrayList<Role> getRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new EventOrganizer());
+        return roles;
     }
     
     @Override
     public Type getOrgType() {
-        return Organization.Type.AwarnessCampaign;
+        return Organization.Type.AwarnessEvent;
     } 
+
 } 

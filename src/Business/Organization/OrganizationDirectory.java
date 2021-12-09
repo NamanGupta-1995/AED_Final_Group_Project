@@ -33,7 +33,7 @@ public class OrganizationDirectory {
             org = new Medical(name);
             listOfOrganizations.add(org);
         }else if (type.getValue().equals(Type.Diagnostics.getValue())){
-            org = new Diagnostics(name);
+            org = new Laboratory(name);
             listOfOrganizations.add(org);
         }else if (type.getValue().equals(Type.Facilities.getValue())){
             org = new Facilities(name);
@@ -45,7 +45,7 @@ public class OrganizationDirectory {
           org = new PoliciesAndFinance(name);
           listOfOrganizations.add(org);
         }else if(type.getValue().equals(Type.AwarnessCampaign.getValue())){
-             org = new AwarnessCampaign(name);
+             org = new AwarnessEvent(name);
             listOfOrganizations.add(org);
         }else if(type.getValue().equals(Type.Therapist.getValue())){
              org = new Therapists(name);

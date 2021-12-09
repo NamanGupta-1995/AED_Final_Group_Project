@@ -11,48 +11,36 @@ package Business.Organ;
  */
 
 public class Organ {
-    private String typeOfOrgan;
-    private String bloodGroup;
-    private boolean isAvailable;
-    private String network;
+     private String organName;
+    private String type_of_blood;
+    private boolean available;
+    private String Network;
 
-    public Organ(String typeOfOrgan, String bloodGroup) {
-        this.typeOfOrgan = typeOfOrgan;
-        this.bloodGroup = bloodGroup;
-        this.isAvailable =  true;
+    public Organ(String organName, String blood_type) {
+        this.organName = organName;
+        this.type_of_blood = blood_type;
+        this.available =  true;
         
     }
 
-    public boolean isIsAvailable() {
-        return isAvailable;
+    public boolean isAvailable() {
+        return available;
     }
 
-    public void setIsAvailable(boolean isAvailable) {
-        this.isAvailable = isAvailable;
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 
-    public String getTypeOfOrgan() {
-        return typeOfOrgan;
+    public String getType_of_blood() {
+        return type_of_blood;
     }
 
-    public void setTypeOfOrgan(String typeOfOrgan) {
-        this.typeOfOrgan = typeOfOrgan;
+    public void setType_of_blood(String type_of_blood) {
+        this.type_of_blood = type_of_blood;
     }
-
-    public String getBloodGroup() {
-        return bloodGroup;
-    }
-
-    public void setBloodGroup(String bloodGroup) {
-        this.bloodGroup = bloodGroup;
-    }
-    
       @Override
     public String toString(){
-        return this.typeOfOrgan;
+        return this.type_of_blood;
     }
-    
-    
-    
     
 }

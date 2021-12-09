@@ -8,7 +8,7 @@ package Business.Role;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.Diagnostics;
+import Business.Organization.Laboratory;
 import Business.Organization.Organization;
 import Business.Organization.Therapists;
 import Business.Person.DonorsDirectory;
@@ -26,7 +26,7 @@ public class LabAssistant extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem ecosystem, Network network, 
             DonorsDirectory donorDirectory) {
-         return new DiagnosticsWorkArea(userProcessContainer, userAccount, (Diagnostics)organization,ecosystem,enterprise);
+         return new DiagnosticsWorkArea(userProcessContainer, userAccount, (Laboratory)organization,ecosystem,enterprise);
     }
     
 }

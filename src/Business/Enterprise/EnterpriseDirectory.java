@@ -10,39 +10,40 @@ import java.util.ArrayList;
 
 /**
  *
- * @author garima
+ * @author namangupta
  */
 public class EnterpriseDirectory {
-    private ArrayList<Enterprise> listOfEnterprise;
+    private ArrayList<Enterprise> enterpriseList;
    
 
-    public ArrayList<Enterprise> getListOfEnterprise() {
-        return listOfEnterprise;
+    public ArrayList<Enterprise> getEnterpriseList() {
+        return enterpriseList;
     }
 
-    public void setListOfEnterprise(ArrayList<Enterprise> enterpriseList) {
-        this.listOfEnterprise = enterpriseList;
+    public void setEnterpriseList(ArrayList<Enterprise> enterpriseList) {
+        this.enterpriseList = enterpriseList;
     }
     
     public EnterpriseDirectory(){
-        listOfEnterprise=new ArrayList<Enterprise>();
+        enterpriseList=new ArrayList<Enterprise>();
     }
     
+      //Create enterprise
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
-        Enterprise enterpriseName = null;
+        Enterprise enterprise=null;
         if(type==Enterprise.EnterpriseType.Hospital){
-            enterpriseName = new EnterpriseHospital(name);
-            listOfEnterprise.add(enterpriseName);
+            enterprise=new HospitalEnterprise(name);
+            enterpriseList.add(enterprise);
         }else if (type==Enterprise.EnterpriseType.OrganBank){
-            enterpriseName = new EnterpriseOrganBank(name);
-            listOfEnterprise.add(enterpriseName);    
-        }else if(type==Enterprise.EnterpriseType.Government){
-            enterpriseName = new EnterpriseGovernment(name);
-            listOfEnterprise.add(enterpriseName);    
-        }else if(type==Enterprise.EnterpriseType.Therapy){
-            enterpriseName = new EnterpriseTherapy(name);
-            listOfEnterprise.add(enterpriseName);    
+            enterprise = new OrganBankEnterprise(name);
+            enterpriseList.add(enterprise);    
+        }else if(type==Enterprise.EnterpriseType.NGO){
+            enterprise = new NGOEnterprise(name);
+            enterpriseList.add(enterprise);    
+        }else if(type==Enterprise.EnterpriseType.Physio){
+            enterprise = new PhysioEnterprise(name);
+            enterpriseList.add(enterprise);    
         }
-        return enterpriseName;
+        return enterprise;
     }
 }

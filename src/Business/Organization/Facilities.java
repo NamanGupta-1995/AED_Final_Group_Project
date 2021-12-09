@@ -11,33 +11,32 @@ import java.util.ArrayList;
 
 /**
  *
- * @author garima
+ * @author namangupta
  */
 public class Facilities extends Organization{
     
-    public Facilities(String facName){
-        super(facName);
+    public Facilities(String name){
+        super(name);
 
     }
-    int count;
+    int counterNumber;
 
-    public int getCount() {
-        return count;
+    public int getCounterNumber() {
+        return counterNumber;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setCounterNumber(int counterNumber) {
+        this.counterNumber = counterNumber;
     }
 
     @Override
-    public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> role = new ArrayList();
-        role.add(new ProcurementTeam());
-        return role;
+    public ArrayList<Role> getRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new ProcurementTeam());
+        return roles;
     }
-    
     @Override
-    public Type getOrgType() {
+    public Organization.Type getOrgType() {
         return Organization.Type.Facilities;
     } 
 } 

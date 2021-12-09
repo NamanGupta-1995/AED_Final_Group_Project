@@ -12,24 +12,23 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mrunal
+ * @author namangupta
  */
-public class Diagnostics extends Organization{
+public class Laboratory extends Organization{
     
-    public Diagnostics(String diagName){
-        super(diagName);
+    public Laboratory(String name){
+        super(name);
 
     }
 
     @Override
-    public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> role = new ArrayList();
-        role.add(new LabAssistant());
-        return role;
+    public ArrayList<Role> getRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new LabAssistant());
+        return roles;
     }
-    
     @Override
-    public Type getOrgType() {
+    public Organization.Type getOrgType() {
         return Organization.Type.Diagnostics;
     } 
 }

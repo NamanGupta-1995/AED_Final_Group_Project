@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.UserAccount;
+package Business.Users;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
@@ -14,28 +14,28 @@ import javax.swing.JOptionPane;
  *
  * @author GarimaC
  */
-public class UserAccountDirectory {
+public class UsersDirectory {
     
-    private ArrayList<UserAccount> accountList;
+    private ArrayList<Users> accountList;
 
-    public UserAccountDirectory() {
+    public UsersDirectory() {
         accountList = new ArrayList();
     }
 
-    public ArrayList<UserAccount> getAccountList() {
+    public ArrayList<Users> getAccountList() {
         return accountList;
     }
     
-    public UserAccount authenticateUser(String username, String password){
-        for (UserAccount ua : accountList)
+    public Users authenticateUser(String username, String password){
+        for (Users ua : accountList)
             if (ua.getUsername().equals(username) && ua.getPassword().equals(password)){
                 return ua;
             }
         return null;
     }
     
-     public UserAccount createUserAccount(String name, String password, Employee emp, Role userRole ){
-        UserAccount account = new UserAccount();
+     public Users createUserAccount(String name, String password, Employee emp, Role userRole ){
+        Users account = new Users();
         account.setUsername(name);
         account.setPassword(password);
         account.setEmployee(emp);
@@ -48,9 +48,9 @@ public class UserAccountDirectory {
         return account;
     }
     
-    public UserAccount createUserAccount(String username, String password,String contact,String add,String qualification, String gender,
+    public Users createUserAccount(String username, String password,String contact,String add,String qualification, String gender,
             boolean availabile, int age, Employee emp, Role userRole,boolean bloodAvailability){
-        UserAccount account = new UserAccount();
+        Users account = new Users();
         account.setUsername(username);
         account.setPassword(password);
         account.setEmployee(emp);
@@ -59,15 +59,15 @@ public class UserAccountDirectory {
         account.setUserAddress(add);
         account.setAge(age);
         account.setGender(gender);
-        account.setIsAvailable(availabile);
-        account.setQualification(qualification);
-        account.setIsAvailableForBloodDonation(bloodAvailability);
+        account.setUserIsAvailable(availabile);
+        account.setQualifications(qualification);
+        account.setUserIsAvailableforOrganDonation(bloodAvailability);
         accountList.add(account);
         return account;
     }
     
     public boolean checkIfUsernameIsUnique(String username){
-        for (UserAccount ua : accountList){
+        for (Users ua : accountList){
             if (ua.getUsername().equals(username))
                 return false;
         }

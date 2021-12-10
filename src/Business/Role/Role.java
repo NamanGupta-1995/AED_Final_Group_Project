@@ -10,7 +10,7 @@ import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organ.Organ;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 
@@ -49,7 +49,7 @@ public abstract class Role {
     }
     
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
-            UserAccount account, 
+            Users account, 
             Organization organization, 
             Enterprise enterprise, 
             EcoSystem business,

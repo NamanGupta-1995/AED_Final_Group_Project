@@ -12,7 +12,7 @@ import Business.Organization.HealthCare;
 import Business.Organization.Organization;
 import Business.Organization.FinanceEvent;
 import Business.Person.DonorsDirectory;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 import userinterface.HealthOfficer.HealthOfficerJPanel;
@@ -24,7 +24,7 @@ import userinterface.HealthOfficer.HealthOfficerJPanel;
 public class MedicalOfficier extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
+    public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
         return new HealthOfficerJPanel(userProcessContainer,userAccount,
                 (FinanceEvent)org, enterprise,ecosystem, network);

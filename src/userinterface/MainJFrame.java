@@ -8,7 +8,7 @@ import Business.EcoSystem;
 import Business.DB4OUtil.DB4OUtil;
 
 import Business.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -123,7 +123,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void loginJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginJButtonActionPerformed
         // Get user name
-       UserAccount user = system.getUserAccountDirectory().authenticateUser(userNameJTextField.getText(), passwordField.getText());
+       Users user = system.getUserAccountDirectory().authenticateUser(userNameJTextField.getText(), passwordField.getText());
        
        if(user == null){
            JOptionPane.showMessageDialog(this, "Invalid User");

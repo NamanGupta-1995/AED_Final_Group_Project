@@ -4,18 +4,18 @@
  */
 package Business.WorkQueue;
 
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import java.util.Date;
 
 /**
  *
- * @author raunak
+ * @author namangupta
  */
 public abstract class WorkRequest {
 
     private String message;
-    private UserAccount sender;
-    private UserAccount receiver;
+    private Users sender;
+    private Users receiver;
     private String status;
     private Date requestDate;
     private Date resolveDate;
@@ -32,19 +32,20 @@ public abstract class WorkRequest {
         this.message = message;
     }
 
-    public UserAccount getSender() {
+    public Users getSender() {
         return sender;
     }
 
-    public void setSender(UserAccount sender) {
+    public void setSender(Users sender) {
         this.sender = sender;
     }
 
-    public UserAccount getReceiver() {
+
+    public Users getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(UserAccount receiver) {
+    public void setReceiver(Users receiver) {
         this.receiver = receiver;
     }
 
@@ -71,4 +72,9 @@ public abstract class WorkRequest {
     public void setResolveDate(Date resolveDate) {
         this.resolveDate = resolveDate;
     }
+    @Override
+    public String toString(){
+        return this.message;
+    }
+    
 }

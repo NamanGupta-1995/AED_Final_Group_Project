@@ -6,7 +6,7 @@ package userinterface.CustomerRole;
 
 import Business.EcoSystem;
 import Business.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.logging.Level;
@@ -21,11 +21,11 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     
-    private UserAccount userAccount;
+    private Users userAccount;
     /**
      * Creates new form RequestLabTestJPanel
      */
-    public RequestLabTestJPanel(JPanel userProcessContainer, UserAccount account) {
+    public RequestLabTestJPanel(JPanel userProcessContainer, Users account) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

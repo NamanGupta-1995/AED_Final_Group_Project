@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.UserAccount;
+package Business.Users;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
@@ -13,42 +13,38 @@ import java.util.Date;
  *
  * @author GarimaC
  */
-public class UserAccount {
+public class Users {
     
-    private String username;
+   private String username;
     private String password;
     private Employee employee;
     private Role role;
     private WorkQueue workQueue;
     private String contact;
     private String userAddress;
-    private String qualification;
-    private String userProfile;
+    private String qualifications;
+    private String profile;
     private int age;
-    //public Date date;
     private String gender;
-    private boolean isAvailable;
-    private boolean isAvailableForBloodDonation;
+    private boolean userIsAvailable;
+    private boolean userIsAvailableforOrganDonation;
 
-     public UserAccount() {
-        workQueue = new WorkQueue();
-    } 
-     
-    public boolean isIsAvailableForBloodDonation() {
-        return isAvailableForBloodDonation;
+    public boolean isUserIsAvailableforOrganDonation() {
+        return userIsAvailableforOrganDonation;
     }
 
-    public void setIsAvailableForBloodDonation(boolean isAvailableForBloodDonation) {
-        this.isAvailableForBloodDonation = isAvailableForBloodDonation;
+    public void setUserIsAvailableforOrganDonation(boolean userIsAvailableforOrganDonation) {
+        this.userIsAvailableforOrganDonation = userIsAvailableforOrganDonation;
     }
 
-    public boolean isIsAvailable() {
-        return isAvailable;
+    public boolean isUserIsAvailable() {
+        return userIsAvailable;
     }
 
-    public void setIsAvailable(boolean isAvailable) {
-        this.isAvailable = isAvailable;
-    }  
+    public void setUserIsAvailable(boolean userIsAvailable) {
+        this.userIsAvailable = userIsAvailable;
+    }
+    
 
     public String getGender() {
         return gender;
@@ -58,6 +54,8 @@ public class UserAccount {
         this.gender = gender;
     }
 
+    
+
     public int getAge() {
         return age;
     }
@@ -66,12 +64,14 @@ public class UserAccount {
         this.age = age;
     }
 
-    public String getUserProfile() {
-        return userProfile;
+   
+
+    public String getProfile() {
+        return profile;
     }
 
-    public void setUserProfile(String userProfile) {
-        this.userProfile = userProfile;
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 
     public String getContact() {
@@ -90,13 +90,19 @@ public class UserAccount {
         this.userAddress = userAddress;
     }
 
-    public String getQualification() {
-        return qualification;
+    public String getQualifications() {
+        return qualifications;
     }
 
-    public void setQualification(String qualification) {
-        this.qualification = qualification;
+    public void setQualifications(String qualifications) {
+        this.qualifications = qualifications;
     }
+
+    public Users() {
+        workQueue = new WorkQueue();
+    }
+    
+    
     
     public String getUsername() {
         return username;
@@ -138,13 +144,9 @@ public class UserAccount {
         this.workQueue = workQueue;
     }
 
-    
-    
     @Override
     public String toString() {
         return username;
     }
-    
-    
     
 }

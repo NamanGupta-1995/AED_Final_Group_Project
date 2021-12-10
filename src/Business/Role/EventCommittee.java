@@ -11,7 +11,7 @@ import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.AwarnessEvent;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
 
@@ -21,7 +21,7 @@ import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
  */
 public class EventCommittee extends Role{
      @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
+    public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
         return new EventOrganizerWorkAreaJPanel(userProcessContainer, userAccount,(AwarnessEvent) org, ecosystem);
     }

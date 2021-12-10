@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author namangupta
  */
 public class WorkQueue {
     
@@ -21,4 +21,5 @@ public class WorkQueue {
     public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
+    
 }

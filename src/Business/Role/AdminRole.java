@@ -10,7 +10,7 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import javax.swing.JOptionPane;
 //import userinterface.AdministrativeRole.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 public class AdminRole extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network, DonorsDirectory donorDirectory) {
+    public JPanel createWorkArea(JPanel userProcessContainer, Users account, Organization organization, Enterprise enterprise, EcoSystem business,Network network, DonorsDirectory donorDirectory) {
         JPanel jp = null;
         if(enterprise.getClass().getTypeName().contains("HospitalEnterprise")){
             //jp=new HospitalAdminJPanel(userProcessContainer, enterprise, business,network);

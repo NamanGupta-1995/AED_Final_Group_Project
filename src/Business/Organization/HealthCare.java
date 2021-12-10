@@ -14,22 +14,22 @@ import java.util.ArrayList;
  *
  * @author garima
  */
-public class Medical extends Organization{
+public class HealthCare extends Organization{
     
-    public Medical(String medName){
+    public HealthCare(String medName){
         super(medName);
 
     }
 
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         ArrayList<Role> role = new ArrayList();
         role.add(new Doctor());
         return role;
     }
     
     @Override
-    public Type getOrgType() {
-        return Organization.Type.Medical;
+    public getRole getOrgType() {
+        return Organization.getRole.HealthCare;
     } 
 } 

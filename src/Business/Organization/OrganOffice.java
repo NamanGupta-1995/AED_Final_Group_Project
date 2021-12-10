@@ -13,20 +13,11 @@ import java.util.ArrayList;
  *
  * @author namangupta
  */
-public class Facilities extends Organization{
-    
-    public Facilities(String name){
+public class OrganOffice extends Organization {
+
+    public OrganOffice(String name){
         super(name);
 
-    }
-    int counterNumber;
-
-    public int getCounterNumber() {
-        return counterNumber;
-    }
-
-    public void setCounterNumber(int counterNumber) {
-        this.counterNumber = counterNumber;
     }
 
     @Override
@@ -36,7 +27,8 @@ public class Facilities extends Organization{
         return roles;
     }
     @Override
-    public Organization.getRole getOrgType() {
-        return Organization.getRole.Facilities;
+    public getRole getOrgType() {
+        return Organization.getRole.OrganManagement;
     } 
-} 
+}
+

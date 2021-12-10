@@ -5,28 +5,29 @@
  */
 package Business.Role;
 
-import Business.Person.DonorsDirectory;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.AwarnessEvent;
-//import Business.Organization.AwarnessEventManagementOrganization;
+import Business.Organization.HealthCare;
 import Business.Organization.Organization;
+import Business.Organization.FinanceEvent;
+import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
-//import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
-//import userinterface.MedicalDirectorWorkArea.MedicalDirectorWorkAreaJPanel.MedicalDirectorWorkAreaJPanel;
+import userinterface.DoctorRole.DoctorWorkAreaJPanel;
+import userinterface.HealthOfficer.HealthOfficerJPanel;
 
 /**
  *
- * @author garima
+ * @author namangupta
  */
-public class EventOrganizer extends Role{
-     @Override
+public class MedicalOfficier extends Role {
+
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
-        return new EventOrganizerWorkAreaJPanel(userProcessContainer, userAccount,(AwarnessEvent) org, ecosystem);
+        return new HealthOfficerJPanel(userProcessContainer,userAccount,
+                (FinanceEvent)org, enterprise,ecosystem, network);
     }
     
 }

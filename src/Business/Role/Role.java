@@ -30,7 +30,7 @@ public abstract class Role {
        EventOrganiser("Event Organiser"),
        Donor("Donor"),
        OrganBankManager("Organ Bank Manager"),
-       Therapist("Therapist");
+       PhysioTherapist("Physio Therapist");
        
         private String value;
 

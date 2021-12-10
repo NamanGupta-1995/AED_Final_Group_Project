@@ -22,8 +22,6 @@ public class DonorsDirectory {
         organs.add("Heart");
         organs.add("Lungs");
         organs.add("Kidney");
-        organs.add("Liver");
-        organs.add("Blood");
     }
 
     public ArrayList<Donors> getDonorsList() {

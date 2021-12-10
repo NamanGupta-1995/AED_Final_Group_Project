@@ -5,31 +5,31 @@
  */
 package Business.Organization;
 
-import Business.Role.HealthOfficier;
 import Business.Role.Role;
+import Business.Role.PhysioTherapistRole;
 import java.util.ArrayList;
 
 /**
  *
  * @author garima
  */
-public class PoliciesAndFinance extends Organization {
-
-    public PoliciesAndFinance(String policyFinName){
-        super(policyFinName);
+public class PhysioTherapist extends Organization{
+    
+    public PhysioTherapist(String therapyName){
+        super(therapyName);
 
     }
 
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         ArrayList<Role> role = new ArrayList();
-        role.add(new HealthOfficier());
+        role.add(new PhysioTherapistRole());
         return role;
     }
     
     @Override
-    public Type getOrgType() {
-        return Organization.Type.PoliciesFinance;
+    public getRole getOrgType() {
+        return Organization.getRole.PhysioTherapist;
     } 
     
     

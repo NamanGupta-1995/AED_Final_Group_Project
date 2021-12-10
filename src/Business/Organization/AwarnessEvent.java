@@ -5,7 +5,7 @@
  */
 package Business.Organization;
 
-import Business.Role.EventOrganizer;
+import Business.Role.EventCommittee;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -23,13 +23,13 @@ public class AwarnessEvent extends Organization {
    @Override
     public ArrayList<Role> getRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new EventOrganizer());
+        roles.add(new EventCommittee());
         return roles;
     }
     
     @Override
-    public Type getOrgType() {
-        return Organization.Type.AwarnessEvent;
+    public getRole getOrgType() {
+        return Organization.getRole.AwarnessEvent;
     } 
 
 } 

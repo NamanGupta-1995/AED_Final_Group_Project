@@ -25,7 +25,7 @@ public class AdminRole extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network, DonorsDirectory donorDirectory) {
-        JPanel jp;
+        JPanel jp = null;
         if(enterprise.getClass().getTypeName().contains("HospitalEnterprise")){
             //jp=new HospitalAdminJPanel(userProcessContainer, enterprise, business,network);
         }

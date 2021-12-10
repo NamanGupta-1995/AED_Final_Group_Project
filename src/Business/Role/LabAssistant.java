@@ -10,7 +10,7 @@ import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Laboratory;
 import Business.Organization.Organization;
-import Business.Organization.Therapists;
+import Business.Organization.PhysioTherapist;
 import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;

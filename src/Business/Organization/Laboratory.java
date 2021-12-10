@@ -28,7 +28,7 @@ public class Laboratory extends Organization{
         return roles;
     }
     @Override
-    public Organization.Type getOrgType() {
-        return Organization.Type.Diagnostics;
+    public Organization.getRole getOrgType() {
+        return Organization.getRole.Diagnostics;
     } 
 }

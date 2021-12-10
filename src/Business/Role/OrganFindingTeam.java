@@ -9,8 +9,8 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Facilities;
-import Business.Organization.Medical;
-import Business.Organization.OrganManagement;
+import Business.Organization.HealthCare;
+import Business.Organization.OrganOffice;
 import Business.Organization.Organization;
 import Business.Person.DonorsDirectory;
 import Business.UserAccount.UserAccount;
@@ -20,9 +20,9 @@ import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 
 /**
  *
- * @author chandrasekhar
+ * @author namangupta
  */
-public class ProcurementTeam extends Role{
+public class OrganFindingTeam extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, 
             Enterprise enterprise, EcoSystem ecosystem,

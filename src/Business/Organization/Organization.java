@@ -24,22 +24,22 @@ public abstract class Organization {
     private PatientsDirectory patientDirectory;
     private int orgID;
     private static int count=0;
-    private Type orgType;
+    private getRole orgType;
 
     
-    public enum Type{
-        Medical("Medical"), 
+    public enum getRole{
+        HealthCare("Medical"), 
         Diagnostics("Diagnostics"), 
         Facilities("Facilities"),
         OrganManagement("Organ Management"),
         PoliciesFinance("Policies and Finance"),
         AwarnessEvent("Awarness Event"),
         User("User"),
-        Therapist("Therapist");
+        PhysioTherapist("Physio Therapist");
         
         private String value;
         
-        private Type(String value) {
+        private getRole(String value) {
             this.value = value;
         }
         public String getValue() {
@@ -57,11 +57,11 @@ public abstract class Organization {
         ++count;
     }
 
-    public Type getOrgType() {
+    public getRole getOrgType() {
         return orgType;
     }
 
-    public void setOrgType(Type orgType) {
+    public void setOrgType(getRole orgType) {
         this.orgType = orgType;
     }
     

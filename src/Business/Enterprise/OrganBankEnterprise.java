@@ -19,7 +19,7 @@ public class OrganBankEnterprise extends Enterprise {
     }
     
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         return null;
     }
 }

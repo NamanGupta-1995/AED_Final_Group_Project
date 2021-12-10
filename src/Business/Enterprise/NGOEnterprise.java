@@ -18,7 +18,7 @@ public class NGOEnterprise extends Enterprise{
     }
         
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         return null;
     }
     

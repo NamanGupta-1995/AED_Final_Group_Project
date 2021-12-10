@@ -22,7 +22,6 @@ public class Donors {
     private String contact;
     private String donorAddress;
     private String donorCity;
-    private String sign;
     private String email;
     private String date;
     private String network;
@@ -150,14 +149,6 @@ public class Donors {
 
     public void setDonorAddress(String donorAddress) {
         this.donorAddress = donorAddress;
-    }
-
-    public String getSign() {
-        return sign;
-    }
-
-    public void setSign(String sign) {
-        this.sign = sign;
     }
     
     @Override

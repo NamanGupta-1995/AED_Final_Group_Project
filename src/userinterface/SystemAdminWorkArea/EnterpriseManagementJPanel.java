@@ -40,11 +40,11 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         DefaultTableModel entTable = (DefaultTableModel) tbl_list_of_enterprises.getModel();
         entTable.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+            for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()) {
                 Object[] row = new Object[3];
-                row[0] = enterprise.getName();
+                row[0] = enterprise.getOrgName();
                 row[1] = network.getName();
-                row[2] = enterprise.getEnterpriseType().getValue();
+                row[2] = enterprise.getEnterpriseType().getType();
                 entTable.addRow(row);
             }
         }
@@ -54,13 +54,13 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         ArrayList<Enterprise.EnterpriseType> estEnterprises = new ArrayList<Enterprise.EnterpriseType>();
         for (Network network : system.getNetworkList()) {
             if (network == currentEnterprise_add_new_network.getSelectedItem()) {
-                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()) {
                     estEnterprises.add(enterprise.getEnterpriseType());
                 }
 
             }
         }
-        if (estEnterprises.contains(type)&&(type.getValue().equalsIgnoreCase("government")||type.getValue().equalsIgnoreCase("organ bank"))) {
+        if (estEnterprises.contains(type)&&(type.getType().equalsIgnoreCase("government")||type.getType().equalsIgnoreCase("organ bank"))) {
             JOptionPane.showMessageDialog(null, "One enterprise allowed for the selected option");
             return true;
         }
@@ -302,7 +302,7 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
                     return;
 
                 } else {
-                    Enterprise enterprise = network.getEnterpriseDirectory().createAndAddEnterprise(name, type);
+                    Enterprise enterprise = network.getEnterpriseList().createAndAddEnterprise(name, type);
                     
                     loadEnterpriseTable();
                     txt_Add_new_EntityName.setText("");
@@ -339,11 +339,11 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tbl_list_of_enterprises.getModel();
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()) {
                     Object[] row = new Object[3];
-                    row[0] = enterprise.getName();
+                    row[0] = enterprise.getOrgName();
                     row[1] = network.getName();
-                    row[2] = enterprise.getEnterpriseType().getValue();
+                    row[2] = enterprise.getEnterpriseType().getType();
                     model.addRow(row);
                 }
             
@@ -355,11 +355,11 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
             if (network.getName() == currentEnterprises_dropdown.getSelectedItem()) {
-                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()) {
                     Object[] row = new Object[3];
-                    row[0] = enterprise.getName();
+                    row[0] = enterprise.getOrgName();
                     row[1] = network.getName();
-                    row[2] = enterprise.getEnterpriseType().getValue();
+                    row[2] = enterprise.getEnterpriseType().getType();
                     model.addRow(row);
                 }
             }else if(currentEnterprises_dropdown.getSelectedIndex()==0){

@@ -10,15 +10,16 @@ import java.util.ArrayList;
 
 /**
  *
- * @author garima
+ * @author namangupta
  */
-public class EnterpriseOrganBank extends Enterprise {
-    public EnterpriseOrganBank(String name){
-        super(name,Enterprise.EnterpriseType.OrganBank);
+public class PhysioEnterprise extends Enterprise {
+    
+    public PhysioEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.Physio);
     }
+    
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         return null;
     }
 }
-

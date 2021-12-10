@@ -9,22 +9,22 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Facilities;
-import Business.Organization.Medical;
-import Business.Organization.OrganManagement;
+import Business.Organization.HealthCare;
+import Business.Organization.OrganOffice;
 import Business.Organization.Organization;
 import Business.Person.DonorsDirectory;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import userinterface.ProcurementTeamRole.ProcurementTeamJPanel;
 import javax.swing.JPanel;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 
 /**
  *
- * @author chandrasekhar
+ * @author namangupta
  */
-public class ProcurementTeam extends Role{
+public class OrganFindingTeam extends Role{
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization organization, 
+    public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, Organization organization, 
             Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
         return new ProcurementTeamJPanel(userProcessContainer,userAccount, (Facilities)organization, enterprise,

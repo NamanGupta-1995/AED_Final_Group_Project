@@ -6,33 +6,32 @@ package Business.Employee;
 
 /**
  *
- * @author garima
+ * @author namangupta
  */
 public class Employee {
     
-    private String name;
-    private int id;
+    private String employeeName;
+    private int employeeId;
+    public Employee(int count) {
+        employeeId = count;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
     
-   public Employee(int count) {
-        id = count;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
     @Override
     public String toString() {
-        return name;
+        return employeeName;
     }
     
     

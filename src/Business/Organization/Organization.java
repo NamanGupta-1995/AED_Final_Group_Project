@@ -7,7 +7,7 @@ package Business.Organization;
 import Business.Employee.EmployeeDirectory;
 import Business.Person.PatientsDirectory;
 import Business.Role.Role;
-import Business.UserAccount.UserAccountDirectory;
+import Business.Users.UsersDirectory;
 import Business.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 
@@ -20,26 +20,26 @@ public abstract class Organization {
     private String orgName;
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
-    private UserAccountDirectory userAccountDirectory;
+    private UsersDirectory userAccountDirectory;
     private PatientsDirectory patientDirectory;
     private int orgID;
     private static int count=0;
-    private Type orgType;
+    private getRole orgType;
 
     
-    public enum Type{
-        Medical("Medical"), 
+    public enum getRole{
+        HealthCare("Medical"), 
         Diagnostics("Diagnostics"), 
         Facilities("Facilities"),
         OrganManagement("Organ Management"),
         PoliciesFinance("Policies and Finance"),
-        AwarnessCampaign("Awarness Campaign"),
+        AwarnessEvent("Awarness Event"),
         User("User"),
-        Therapist("Therapist");
+        PhysioTherapist("Physio Therapist");
         
         private String value;
         
-        private Type(String value) {
+        private getRole(String value) {
             this.value = value;
         }
         public String getValue() {
@@ -51,23 +51,23 @@ public abstract class Organization {
         this.orgName = name;
         workQueue = new WorkQueue();
         employeeDirectory = new EmployeeDirectory();
-        userAccountDirectory = new UserAccountDirectory();
+        userAccountDirectory = new UsersDirectory();
         patientDirectory=new PatientsDirectory();
         orgID = count;
         ++count;
     }
 
-    public Type getOrgType() {
+    public getRole getOrgType() {
         return orgType;
     }
 
-    public void setOrgType(Type orgType) {
+    public void setOrgType(getRole orgType) {
         this.orgType = orgType;
     }
     
-    public abstract ArrayList<Role> getSupportedRole();
+    public abstract ArrayList<Role> getRole();
     
-    public UserAccountDirectory getUserAccountDirectory() {
+    public UsersDirectory getUserAccountDirectory() {
         return userAccountDirectory;
     }
 

@@ -22,8 +22,6 @@ public class DonorsDirectory {
         organs.add("Heart");
         organs.add("Lungs");
         organs.add("Kidney");
-        organs.add("Liver");
-        organs.add("Blood");
     }
 
     public ArrayList<Donors> getDonorsList() {
@@ -42,7 +40,6 @@ public class DonorsDirectory {
         donor.setDonorBloodGroup(bloodGroup);
         donor.setContact(contact);
         donor.setDonorAddress(address);
-        donor.setSign(sign);
         donor.setEmail(email);
         donor.setpName(emergencyPOC);
         donor.setpContact(emergencyPOC_Num);

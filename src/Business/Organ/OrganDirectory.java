@@ -13,43 +13,34 @@ import java.util.ArrayList;
  */
 public class OrganDirectory {
 
-    private ArrayList<Organ> listOfOrgans;
+ private ArrayList<Organ> OrganList;
 
     public OrganDirectory() {
+        OrganList = new ArrayList<Organ>();
+        Organ org1 = new Organ("Heart", "A Positive");
+        Organ org2 = new Organ("Lungs", "A Positive");
+        Organ org3 = new Organ("Kidney", "A Positive");
         
-        listOfOrgans = new ArrayList<Organ>();
-        Organ org1 = new Organ("Heart", "O positive");
-        Organ org2 = new Organ("Liver", "O positive");
-        Organ org3 = new Organ("Eyes", "O positive");
-        Organ org4 = new Organ("Kidney", "O positive");
-        Organ org5 = new Organ("Lungs", "O positive");
-        Organ org6 = new Organ("Pancreas", "O positive");
-        Organ org7 = new Organ("Blood", "O positive");
-        
-        listOfOrgans.add(org1);
-        listOfOrgans.add(org2);
-        listOfOrgans.add(org3);
-        listOfOrgans.add(org4);
-        listOfOrgans.add(org5);
-        listOfOrgans.add(org6);
-        listOfOrgans.add(org7);
+        OrganList.add(org1);
+        OrganList.add(org2);
+        OrganList.add(org3);
     }
 
-    public ArrayList<Organ> getListOfOrgans() {
-        return listOfOrgans;
+    public ArrayList<Organ> getOrganList() {
+        return OrganList;
     }
 
-    public void setListOfOrgans(ArrayList<Organ> listOfOrgans) {
-        this.listOfOrgans = listOfOrgans;
+    public void setOrganList(ArrayList<Organ> OrganList) {
+        this.OrganList = OrganList;
     }
     public void addOrgan(Organ o){
         
-        listOfOrgans.add(o);
+        OrganList.add(o);
      
     }
     
     public void removeOrgan(Organ o){
-        listOfOrgans.remove(o);
+        OrganList.remove(o);
         
     }
 

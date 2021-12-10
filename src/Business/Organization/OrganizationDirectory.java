@@ -4,7 +4,7 @@
  */
 package Business.Organization;
 
-import Business.Organization.Organization.Type;
+import Business.Organization.Organization.getRole;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -27,28 +27,28 @@ public class OrganizationDirectory {
     
     
     
-     public Organization createOrganization(Type type,String name){
+     public Organization createOrganization(getRole type,String name){
         Organization org = null;
-        if (type.getValue().equals(Type.Medical.getValue())){
-            org = new Medical(name);
+        if (type.getValue().equals(getRole.HealthCare.getValue())){
+            org = new HealthCare(name);
             listOfOrganizations.add(org);
-        }else if (type.getValue().equals(Type.Diagnostics.getValue())){
-            org = new Diagnostics(name);
+        }else if (type.getValue().equals(getRole.Diagnostics.getValue())){
+            org = new Laboratory(name);
             listOfOrganizations.add(org);
-        }else if (type.getValue().equals(Type.Facilities.getValue())){
+        }else if (type.getValue().equals(getRole.Facilities.getValue())){
             org = new Facilities(name);
             listOfOrganizations.add(org);
-        }else if (type.getValue().equals(Type.OrganManagement.getValue())){
-            org = new OrganManagement(name);
+        }else if (type.getValue().equals(getRole.OrganManagement.getValue())){
+            org = new OrganOffice(name);
             listOfOrganizations.add(org);
-        }else if(type.getValue().equals(Type.PoliciesFinance.getValue())){
-          org = new PoliciesAndFinance(name);
+        }else if(type.getValue().equals(getRole.PoliciesFinance.getValue())){
+          org = new FinanceEvent(name);
           listOfOrganizations.add(org);
-        }else if(type.getValue().equals(Type.AwarnessCampaign.getValue())){
-             org = new AwarnessCampaign(name);
+        }else if(type.getValue().equals(getRole.AwarnessEvent.getValue())){
+             org = new AwarnessEvent(name);
             listOfOrganizations.add(org);
-        }else if(type.getValue().equals(Type.Therapist.getValue())){
-             org = new Therapists(name);
+        }else if(type.getValue().equals(getRole.PhysioTherapist.getValue())){
+             org = new PhysioTherapist(name);
              listOfOrganizations.add(org);
         }
         return org;

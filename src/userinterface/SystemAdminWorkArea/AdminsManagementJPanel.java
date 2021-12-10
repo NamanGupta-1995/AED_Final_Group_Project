@@ -9,7 +9,7 @@ import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Role.AdminRole;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
             for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                for (UserAccount userAccount : enterprise.getUserAccountDirectory().getUserAccountList()) {
+                for (Users userAccount : enterprise.getUserAccountDirectory().getUserAccountList()) {
                     Object[] row = new Object[3];
                     row[0] = enterprise.getName();
                     row[1] = network.getName();
@@ -374,7 +374,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
         if(nameMatch && userNameMatch && passMatch){
         Employee employee = enterprise.getEmployeeDirectory().createEmployee(system.getEmployeeId(),name);
         system.incEmployeeId();
-        UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());
+        Users account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());
         userstring.add(username);
         populateTable();
         JOptionPane.showMessageDialog(null, "Enterprise admin added");
@@ -410,7 +410,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please select an enterprise admin to update");
             return;
         }
-        UserAccount user = (UserAccount) enterprise_list_tbl.getValueAt(selectedRow, 2);
+        Users user = (Users) enterprise_list_tbl.getValueAt(selectedRow, 2);
         txt_UserName.setText(user.getUsername());
         txt_Password.setText(user.getPassword());
         txt_Name.setText(user.getEmployee().getName());
@@ -427,7 +427,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please select an enterprise admin to update");
             return;
         }
-        UserAccount user = (UserAccount) enterprise_list_tbl.getValueAt(selectedRow, 2);
+        Users user = (Users) enterprise_list_tbl.getValueAt(selectedRow, 2);
         user.setUsername(txt_UserName.getText());
         user.setPassword(txt_Password.getText());
         user.getEmployee().setName(txt_Name.getText());

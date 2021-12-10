@@ -5,7 +5,8 @@
  */
 package Business.Organization;
 
-import Business.Role.ProcurementTeam;
+import Business.Role.Doctor;
+import Business.Role.LabAssistant;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -13,23 +14,22 @@ import java.util.ArrayList;
  *
  * @author garima
  */
-public class OrganManagement extends Organization {
-
-    public OrganManagement(String orgName){
-        super(orgName);
+public class HealthCare extends Organization{
+    
+    public HealthCare(String medName){
+        super(medName);
 
     }
 
     @Override
-    public ArrayList<Role> getSupportedRole() {
+    public ArrayList<Role> getRole() {
         ArrayList<Role> role = new ArrayList();
-        role.add(new ProcurementTeam());
+        role.add(new Doctor());
         return role;
     }
     
     @Override
-    public Type getOrgType() {
-        return Organization.Type.OrganManagement;
+    public getRole getOrgType() {
+        return Organization.getRole.HealthCare;
     } 
-}
-
+} 

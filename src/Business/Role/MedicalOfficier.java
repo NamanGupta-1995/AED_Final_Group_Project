@@ -8,26 +8,26 @@ package Business.Role;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.Medical;
+import Business.Organization.HealthCare;
 import Business.Organization.Organization;
-import Business.Organization.PoliciesAndFinance;
+import Business.Organization.FinanceEvent;
 import Business.Person.DonorsDirectory;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.DoctorRole.DoctorWorkAreaJPanel;
 import userinterface.HealthOfficer.HealthOfficerJPanel;
 
 /**
  *
- * @author mruna
+ * @author namangupta
  */
-public class HealthOfficier extends Role {
+public class MedicalOfficier extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
+    public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, Organization org, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
         return new HealthOfficerJPanel(userProcessContainer,userAccount,
-                (PoliciesAndFinance)org, enterprise,ecosystem, network);
+                (FinanceEvent)org, enterprise,ecosystem, network);
     }
     
 }

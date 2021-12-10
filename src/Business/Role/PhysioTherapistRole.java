@@ -9,9 +9,9 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.Therapists;
+import Business.Organization.PhysioTherapist;
 import Business.Person.DonorsDirectory;
-import Business.UserAccount.UserAccount;
+import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.TherapistRole.TherapistWorkAreaJPanel;
 
@@ -19,13 +19,13 @@ import userinterface.TherapistRole.TherapistWorkAreaJPanel;
  *
  * @author Garima
  */
-public class TherapistRole extends Role {
+public class PhysioTherapistRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount userAccount, 
+    public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, 
             Organization organization, Enterprise enterprise, 
             EcoSystem business, Network network, DonorsDirectory donorDirectory) {
-         return new TherapistWorkAreaJPanel(userProcessContainer, userAccount, (Therapists)organization, enterprise,business, network);
+         return new TherapistWorkAreaJPanel(userProcessContainer, userAccount, (PhysioTherapist)organization, enterprise,business, network);
     }
     
 }

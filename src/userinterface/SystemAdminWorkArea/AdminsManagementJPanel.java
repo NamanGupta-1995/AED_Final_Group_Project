@@ -48,10 +48,10 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                for (Users userAccount : enterprise.getUserAccountDirectory().getUserAccountList()) {
+            for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()) {
+                for (Users userAccount : enterprise.getUserAccountDirectory().getAccountList()) {
                     Object[] row = new Object[3];
-                    row[0] = enterprise.getName();
+                    row[0] = enterprise.getOrgName();
                     row[1] = network.getName();
                     row[2] = userAccount;
                     userstring.add(userAccount.toString());
@@ -73,7 +73,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
     private void populateEnterpriseComboBoxDropDown(Network network){
         enterprise_comboBox.removeAllItems();
         
-        for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()){
+        for (Enterprise enterprise : network.getEnterpriseList().getEnterpriseList()){
             enterprise_comboBox.addItem(enterprise);
         }
         
@@ -413,7 +413,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
         Users user = (Users) enterprise_list_tbl.getValueAt(selectedRow, 2);
         txt_UserName.setText(user.getUsername());
         txt_Password.setText(user.getPassword());
-        txt_Name.setText(user.getEmployee().getName());
+        txt_Name.setText(user.getEmployee().getEmployeeName());
         btn_save.setEnabled(true);
         
 
@@ -430,7 +430,7 @@ public class AdminsManagementJPanel extends javax.swing.JPanel {
         Users user = (Users) enterprise_list_tbl.getValueAt(selectedRow, 2);
         user.setUsername(txt_UserName.getText());
         user.setPassword(txt_Password.getText());
-        user.getEmployee().setName(txt_Name.getText());
+        user.getEmployee().setEmployeeName(txt_Name.getText());
         JOptionPane.showMessageDialog(null, "Details Updated Successfully");
         populateTable();
     }//GEN-LAST:event_btn_saveActionPerformed

@@ -40,7 +40,6 @@ public class DonorsDirectory {
         donor.setDonorBloodGroup(bloodGroup);
         donor.setContact(contact);
         donor.setDonorAddress(address);
-        donor.setSign(sign);
         donor.setEmail(email);
         donor.setpName(emergencyPOC);
         donor.setpContact(emergencyPOC_Num);

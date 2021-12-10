@@ -418,7 +418,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_cbBloodGroupActionPerformed
 
     
-    public boolean isFirstnameValid(String text) {
+    public boolean checkFirstname(String text) {
 
         if (text.matches("^([A-Za-z]+)(\\s[A-Za-z]+)*\\s?$")) {
             for (String s : userList) {
@@ -435,7 +435,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
         }
     }
 
-    private boolean valage(String age) {
+    private boolean checkAge(String age) {
         Pattern pattern = Pattern.compile("[0-9]+");
         Matcher matcher = pattern.matcher(age);
         boolean bool = matcher.matches();
@@ -463,7 +463,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
         }
     }
 
-    private boolean usernamePatternCorrect(String username) {
+    private boolean checkUsernamePattern(String username) {
         int f = 0;
 
         Pattern pattern = Pattern.compile("(?!_).*[A-Za-z0-9._]+@[A-Za-z0-9._]+\\.[A-Za-z]{2,4}");
@@ -508,12 +508,12 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
             isOrganAvaiNow = false;
         }
 
-        if (isFirstnameValid(name)) {
+        if (checkFirstname(name)) {
             f++;
         } else {
             return;
         }
-        if (valage(txtAge.getText())) {
+        if (checkAge(txtAge.getText())) {
             age = Integer.parseInt(txtAge.getText());
             f++;
         } else {
@@ -531,7 +531,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
             }
         }
 
-        if (usernamePatternCorrect(emailAdd)) {
+        if (checkUsernamePattern(emailAdd)) {
             f++;
         } else {
             return;
@@ -551,7 +551,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
             }
         }
 
-        if (isFirstnameValid(emergencyPOC)) {
+        if (checkFirstname(emergencyPOC)) {
             f++;
         } else {
             return;

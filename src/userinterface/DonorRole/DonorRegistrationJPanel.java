@@ -33,7 +33,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DonorRegistrationJPanel
      */
- JPanel userProcessContainer;
+    JPanel userProcessContainer;
     String emailAdd;
     EcoSystem ecosystem;
     String city;

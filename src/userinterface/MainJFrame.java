@@ -20,7 +20,7 @@ import Business.WorkQueue.WorkQueue;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-//import userinterface.DonorRole.DonorRegistrationFormJPanel;
+import userinterface.DonorRole.DonorRegistrationJPanel;
 
 /**
  *
@@ -256,6 +256,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btn_donorRegisterationRegisterationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_donorRegisterationRegisterationActionPerformed
 
+        DonorRegistrationJPanel donorWorkAreaJPanel = new DonorRegistrationJPanel(logincontainer, system, donorDirectory, dB4OUtil);
+        logincontainer.add("donorWorkAreaJPanel", donorWorkAreaJPanel);
+        CardLayout layout=(CardLayout)logincontainer.getLayout();
+        layout.next(logincontainer);
     }//GEN-LAST:event_btn_donorRegisterationRegisterationActionPerformed
 
     /**

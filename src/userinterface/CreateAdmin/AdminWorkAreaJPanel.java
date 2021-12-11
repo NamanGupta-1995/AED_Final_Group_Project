@@ -119,7 +119,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_manage_usersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_manage_usersActionPerformed
-        UserManagement manageusers = new UserManagement(userProcessContainer, enterprise);
+        UserDetailManage manageusers = new UserDetailManage(userProcessContainer, enterprise);
         userProcessContainer.add("ManageUserAccountJPanel", manageusers);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

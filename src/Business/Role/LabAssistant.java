@@ -15,7 +15,7 @@ import Business.Person.DonorsDirectory;
 import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.LabAssistantRole.DiagnosticsWorkArea;
-import userinterface.TherapistRole.TherapistWorkAreaJPanel;
+import userinterface.PhysioTherapistRole.PhysioTherapistWorkAreaJPanel;
 
 /**
  *

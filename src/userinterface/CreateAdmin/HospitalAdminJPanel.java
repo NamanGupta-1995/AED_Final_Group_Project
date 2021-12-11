@@ -133,7 +133,7 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_manage_usersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_manage_usersActionPerformed
-        UserManagement manage_users = new UserManagement(userProcessContainer, enterprise);
+        UserDetailManage manage_users = new UserDetailManage(userProcessContainer, enterprise);
         userProcessContainer.add("ManageUserAccountJPanel", manage_users);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

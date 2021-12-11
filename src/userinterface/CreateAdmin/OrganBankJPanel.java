@@ -137,7 +137,7 @@ public class OrganBankJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_manage_usersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_manage_usersActionPerformed
-        UserManagement manage_users = new UserManagement(userProcessContainer, enterprise);
+        UserDetailManage manage_users = new UserDetailManage(userProcessContainer, enterprise);
         userProcessContainer.add("ManageUserAccountJPanel", manage_users);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -160,7 +160,7 @@ public class OrganBankJPanel extends javax.swing.JPanel {
 
     private void btn_view_requestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_view_requestActionPerformed
         // TODO add your handling code here:
-        OrganManagement pm = new OrganManagement(userProcessContainer, enterprise.getOrganizationDirectory(),enterprise,ecoSystem,network);
+        ManageOrgan pm = new ManageOrgan(userProcessContainer, enterprise.getOrganizationDirectory(),enterprise,ecoSystem,network);
         userProcessContainer.add("manageOrgan", pm);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

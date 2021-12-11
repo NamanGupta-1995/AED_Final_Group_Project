@@ -100,6 +100,19 @@ public class EcoSystem extends Organization{
         return network;
     }
     
+    public Network getNetworkByName(String networkName){
+        for(Network network:networkList){
+            if(network.getName().equals(networkName)){
+                return network;
+            }
+        }
+        return null;
+    }
+    
+    public void deleteNetwork(Network network){
+        networkList.remove(network);
+    }
+    
     @Override
     public ArrayList<Role> getRole() {
         ArrayList<Role> roleList=new ArrayList<Role>();

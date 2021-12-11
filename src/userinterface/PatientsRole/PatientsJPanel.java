@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.PatientRole;
+package userinterface.PatientsRole;
 
 import Business.Enterprise.Enterprise;
 import javax.swing.JPanel;
 
 /**
  *
- * @author chandrasekhar
+ * @author namangupta
  */
-public class PatientJPanel extends javax.swing.JPanel {
+public class PatientsJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PatientJPanel
+     * Creates new form PatientsJPanel
      */
-    public PatientJPanel(JPanel userProcessContainer, Enterprise enterprise) {
+    public PatientsJPanel(JPanel userProcessContainer, Enterprise enterprise) {
         initComponents();
     }
 

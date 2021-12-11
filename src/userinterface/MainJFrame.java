@@ -168,10 +168,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btn_logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_logoutActionPerformed
         btn_logout.setEnabled(false);
-        //btn_donorRegisteration.setEnabled(true);
-        //txtusername.setEnabled(true);
-        //txtpassword.setEnabled(true);
-        //btn_login.setEnabled(true);
 
         txtusername.setText("");
         txtpassword.setText("");
@@ -247,9 +243,7 @@ public class MainJFrame extends javax.swing.JFrame {
             layout.next(logincontainer);
         }
 
-        //btn_login.setEnabled(false);
         btn_logout.setEnabled(true);
-        //btn_donorRegisteration.setEnabled(false);
         txtusername.setEnabled(false);
         txtpassword.setEnabled(false);
     }//GEN-LAST:event_btn_loginActionPerformed

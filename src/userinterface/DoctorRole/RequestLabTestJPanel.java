@@ -8,11 +8,11 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.HospitalEnterprise;
 import Business.Network.Network;
-import Business.Organization.Diagnostics;
-import Business.Organization.Medical;
+import Business.Organization.Laboratory;
+import Business.Organization.HealthCare;
 import Business.Organization.Organization;
-import Business.Person.Patient;
-import Business.UserAccount.UserAccount;
+import Business.Person.Patients;
+import Business.Users.Users;
 import Business.WorkQueue.DiagnosticsWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -29,16 +29,16 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Enterprise enterprise;
-    private UserAccount userAccount;
-    private Patient patientAccount;
-    private Medical organization;
+    private Users userAccount;
+    private Patients patientAccount;
+    private HealthCare organization;
     EcoSystem ecosystem;
     Network network;
     //private DiagnosticsWorkRequest testRequest;
     /**
      * Creates new form RequestLabTestJPanel
      */
-    public RequestLabTestJPanel(JPanel userProcessContainer, UserAccount account, Patient patientAccount, Enterprise enterprise,Medical organization, EcoSystem ecosystem, Network network) {
+    public RequestLabTestJPanel(JPanel userProcessContainer, Users account, Patients patientAccount, Enterprise enterprise,HealthCare organization, EcoSystem ecosystem, Network network) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -343,8 +343,8 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         Organization org = null;
         Enterprise e=null;
         
-        for(Enterprise ent: network.getEnterpriseDirectory().getEnterpriseList()){
-            if(ent instanceof HospitalEnterprise&&ent.getName().equalsIgnoreCase(enterprise.getName())){
+        for(Enterprise ent: network.getEnterpriseList().getEnterpriseList()){
+            if(ent instanceof HospitalEnterprise&&ent.getOrgName().equalsIgnoreCase(enterprise.getOrgName())){
                 e=ent;
                 ent.getWorkQueue().getWorkRequestList().add(request);
                 userAccount.getWorkQueue().getWorkRequestList().add(request);
@@ -355,7 +355,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please fill the details");
         }else{
         JOptionPane.showMessageDialog(null, "Test requested");
-        patientAccount.setAlive(false);// to not repeat patient
+        patientAccount.setIsAlive(false);// to not repeat patient
         btn_request.setEnabled(false);}
         
         DoctorWorkAreaJPanel backbtn=new DoctorWorkAreaJPanel(userProcessContainer,userAccount,organization,enterprise,ecosystem,network);

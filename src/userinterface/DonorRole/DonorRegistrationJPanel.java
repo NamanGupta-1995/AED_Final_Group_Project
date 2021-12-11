@@ -204,7 +204,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
         });
 
         organToDonateJComboBox.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        organToDonateJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Heart", "Lungs", "Kidneys", "Small Bowel", "Pancreas" }));
+        organToDonateJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Heart", "Lungs", "Kidneys" }));
         organToDonateJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organToDonateJComboBoxActionPerformed(evt);
@@ -304,9 +304,8 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(radOrganAvailableNowYes)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(radOrganAvailableNo)))
-                        .addGap(5, 5, 5)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(radOrganAvailableNo)))))
+                .addContainerGap(11, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(211, 211, 211)
                 .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)

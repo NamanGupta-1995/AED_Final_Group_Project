@@ -13,7 +13,7 @@ import Business.Organization.AwarnessEvent;
 import Business.Organization.Organization;
 import Business.Users.Users;
 import javax.swing.JPanel;
-import userinterface.EventOrganizerRole.EventOrganizerWorkAreaJPanel;
+import userinterface.EventsOrganizerRole.EventOrganizerWorkAreaJPanel;
 
 /**
  *

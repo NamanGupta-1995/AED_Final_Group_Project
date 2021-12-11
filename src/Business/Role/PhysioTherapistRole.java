@@ -13,7 +13,7 @@ import Business.Organization.PhysioTherapist;
 import Business.Person.DonorsDirectory;
 import Business.Users.Users;
 import javax.swing.JPanel;
-import userinterface.TherapistRole.TherapistWorkAreaJPanel;
+import userinterface.PhysioTherapistRole.PhysioTherapistWorkAreaJPanel;
 
 /**
  *
@@ -25,7 +25,7 @@ public class PhysioTherapistRole extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, 
             Organization organization, Enterprise enterprise, 
             EcoSystem business, Network network, DonorsDirectory donorDirectory) {
-         return new TherapistWorkAreaJPanel(userProcessContainer, userAccount, (PhysioTherapist)organization, enterprise,business, network);
+         return new PhysioTherapistWorkAreaJPanel(userProcessContainer, userAccount, (PhysioTherapist)organization, enterprise,business, network);
     }
     
 }

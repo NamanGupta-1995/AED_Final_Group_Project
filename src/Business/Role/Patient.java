@@ -12,7 +12,7 @@ import Business.Organization.Organization;
 import Business.Person.DonorsDirectory;
 import Business.Users.Users;
 import javax.swing.JPanel;
-import userinterface.AdministrativeRole.AdminWorkAreaJPanel;
+import userinterface.CreateAdmin.AdminWorkAreaJPanel;
 import userinterface.PatientRole.PatientJPanel;
 
 /**

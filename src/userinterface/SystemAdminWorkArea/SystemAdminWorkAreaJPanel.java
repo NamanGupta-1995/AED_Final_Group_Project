@@ -52,7 +52,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btn_manage_enterprise = new javax.swing.JButton();
         btn_manage_admins = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -81,7 +80,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btn_manage_network.setBackground(new java.awt.Color(0, 102, 153));
         btn_manage_network.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
         btn_manage_network.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_network.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/network_24px.png"))); // NOI18N
         btn_manage_network.setText("Manage Network");
         btn_manage_network.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +90,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btn_manage_enterprise.setBackground(new java.awt.Color(0, 102, 153));
         btn_manage_enterprise.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_manage_enterprise.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_enterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/enterprise_resource_planning_24px.png"))); // NOI18N
         btn_manage_enterprise.setText("Manage Enterprise");
         btn_manage_enterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +100,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btn_manage_admins.setBackground(new java.awt.Color(0, 102, 153));
         btn_manage_admins.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_manage_admins.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_admins.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/enterprise_admin1.png"))); // NOI18N
         btn_manage_admins.setText("Manage Enterprise Admin");
         btn_manage_admins.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +110,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("SYSTEM ADMIN DASHBOARD");
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -133,11 +127,8 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                         .addComponent(btn_manage_admins, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(84, 84, 84)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(775, Short.MAX_VALUE))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(770, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,9 +141,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(btn_manage_enterprise))
                 .addGap(18, 18, 18)
                 .addComponent(btn_manage_admins, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(499, Short.MAX_VALUE))
+                .addContainerGap(835, Short.MAX_VALUE))
         );
 
         jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn_manage_admins, btn_manage_enterprise, btn_manage_network});
@@ -188,7 +177,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btn_manage_admins;
     private javax.swing.JButton btn_manage_enterprise;
     private javax.swing.JButton btn_manage_network;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

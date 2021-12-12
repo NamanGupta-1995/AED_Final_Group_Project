@@ -69,6 +69,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jSplitPane1 = new javax.swing.JSplitPane();
         logoutjPanel = new javax.swing.JPanel();
         btn_logout = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         logincontainer = new javax.swing.JPanel();
         loginjPanel = new javax.swing.JPanel();
         txtusername = new javax.swing.JTextField();
@@ -87,9 +88,8 @@ public class MainJFrame extends javax.swing.JFrame {
         logoutjPanel.setPreferredSize(new java.awt.Dimension(250, 1080));
         logoutjPanel.setLayout(null);
 
-        btn_logout.setBackground(new java.awt.Color(51, 51, 51));
+        btn_logout.setBackground(new java.awt.Color(255, 0, 51));
         btn_logout.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_logout.setForeground(new java.awt.Color(255, 255, 255));
         btn_logout.setText("Logout");
         btn_logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +97,12 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         logoutjPanel.add(btn_logout);
-        btn_logout.setBounds(0, 500, 100, 27);
+        btn_logout.setBounds(0, 150, 100, 27);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/download (1).png"))); // NOI18N
+        jLabel3.setPreferredSize(new java.awt.Dimension(100, 200));
+        logoutjPanel.add(jLabel3);
+        jLabel3.setBounds(0, 0, 100, 140);
 
         jSplitPane1.setLeftComponent(logoutjPanel);
 
@@ -105,7 +110,7 @@ public class MainJFrame extends javax.swing.JFrame {
         logincontainer.setPreferredSize(new java.awt.Dimension(1670, 1080));
         logincontainer.setLayout(new java.awt.CardLayout());
 
-        loginjPanel.setBackground(new java.awt.Color(255, 255, 255));
+        loginjPanel.setBackground(new java.awt.Color(255, 170, 170));
         loginjPanel.setMaximumSize(new java.awt.Dimension(1200, 800));
         loginjPanel.setPreferredSize(new java.awt.Dimension(1200, 800));
         loginjPanel.setLayout(null);
@@ -317,6 +322,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_logout;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lblusername;

@@ -62,6 +62,7 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
         btn_in_process = new javax.swing.JButton();
         btn_completed = new javax.swing.JButton();
         lbl_procurement_team_dashboard = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1200, 800));
@@ -83,10 +84,9 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
         tbl_work_request.setSelectionForeground(new java.awt.Color(255, 255, 0));
         jScrollPane1.setViewportView(tbl_work_request);
 
-        btn_in_process.setBackground(new java.awt.Color(0, 102, 153));
+        btn_in_process.setBackground(new java.awt.Color(255, 0, 51));
         btn_in_process.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_in_process.setForeground(new java.awt.Color(255, 255, 255));
-        btn_in_process.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh_24px.png"))); // NOI18N
         btn_in_process.setText("InProcess");
         btn_in_process.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,10 +94,9 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_completed.setBackground(new java.awt.Color(0, 102, 153));
+        btn_completed.setBackground(new java.awt.Color(255, 0, 51));
         btn_completed.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_completed.setForeground(new java.awt.Color(255, 255, 255));
-        btn_completed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/task_completed_30px.png"))); // NOI18N
         btn_completed.setText("Completed");
         btn_completed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,41 +104,51 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
             }
         });
 
-        lbl_procurement_team_dashboard.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        lbl_procurement_team_dashboard.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lbl_procurement_team_dashboard.setForeground(new java.awt.Color(255, 0, 51));
         lbl_procurement_team_dashboard.setText("Procurement Team Dashboard");
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/assistance.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(440, 440, 440))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(489, 489, 489)
-                        .addComponent(btn_in_process)
-                        .addGap(43, 43, 43)
-                        .addComponent(btn_completed))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(354, 354, 354)
-                        .addComponent(lbl_procurement_team_dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(418, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(279, 279, 279)
+                                .addComponent(lbl_procurement_team_dashboard))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(303, 303, 303)
+                                .addComponent(btn_in_process)
+                                .addGap(54, 54, 54)
+                                .addComponent(btn_completed)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(103, 103, 103)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 894, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(203, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addContainerGap()
                 .addComponent(lbl_procurement_team_dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_in_process)
-                    .addComponent(btn_completed, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(213, 213, 213))
+                    .addComponent(btn_completed))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, Short.MAX_VALUE)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -191,6 +200,7 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_completed;
     private javax.swing.JButton btn_in_process;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbl_procurement_team_dashboard;
     private javax.swing.JTable tbl_work_request;

@@ -68,7 +68,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1 = new javax.swing.JSplitPane();
         logoutjPanel = new javax.swing.JPanel();
-        loginJLabel = new javax.swing.JLabel();
         btn_logout = new javax.swing.JButton();
         logincontainer = new javax.swing.JPanel();
         loginjPanel = new javax.swing.JPanel();
@@ -78,34 +77,34 @@ public class MainJFrame extends javax.swing.JFrame {
         txtpassword = new javax.swing.JPasswordField();
         btn_login = new javax.swing.JButton();
         btn_donorRegisteration = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         logoutjPanel.setBackground(new java.awt.Color(0, 255, 204));
+        logoutjPanel.setMinimumSize(new java.awt.Dimension(100, 200));
         logoutjPanel.setPreferredSize(new java.awt.Dimension(250, 1080));
         logoutjPanel.setLayout(null);
-        logoutjPanel.add(loginJLabel);
-        loginJLabel.setBounds(935, 399, 0, 0);
 
-        btn_logout.setBackground(new java.awt.Color(255, 255, 255));
+        btn_logout.setBackground(new java.awt.Color(51, 51, 51));
         btn_logout.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_logout.setForeground(new java.awt.Color(255, 0, 51));
         btn_logout.setText("Logout");
-        btn_logout.setEnabled(false);
         btn_logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_logoutActionPerformed(evt);
             }
         });
         logoutjPanel.add(btn_logout);
-        btn_logout.setBounds(990, 20, 122, 29);
+        btn_logout.setBounds(0, 10, 100, 27);
 
         jSplitPane1.setLeftComponent(logoutjPanel);
 
-        logincontainer.setBackground(new java.awt.Color(204, 204, 204));
+        logincontainer.setBackground(new java.awt.Color(255, 255, 255));
         logincontainer.setPreferredSize(new java.awt.Dimension(1670, 1080));
         logincontainer.setLayout(new java.awt.CardLayout());
 
+        loginjPanel.setBackground(new java.awt.Color(255, 255, 255));
         loginjPanel.setMaximumSize(new java.awt.Dimension(1200, 800));
         loginjPanel.setPreferredSize(new java.awt.Dimension(1200, 800));
         loginjPanel.setLayout(null);
@@ -124,19 +123,20 @@ public class MainJFrame extends javax.swing.JFrame {
         lblusername.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
         lblusername.setText("Username:");
         loginjPanel.add(lblusername);
-        lblusername.setBounds(332, 260, 90, 17);
+        lblusername.setBounds(332, 260, 90, 18);
 
         lblpassword.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
         lblpassword.setText("Password:");
         loginjPanel.add(lblpassword);
-        lblpassword.setBounds(330, 300, 90, 17);
+        lblpassword.setBounds(330, 300, 90, 18);
 
         txtpassword.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         loginjPanel.add(txtpassword);
         txtpassword.setBounds(440, 288, 362, 30);
 
-        btn_login.setBackground(new java.awt.Color(255, 255, 255));
+        btn_login.setBackground(new java.awt.Color(0, 0, 0));
         btn_login.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
+        btn_login.setForeground(new java.awt.Color(255, 255, 255));
         btn_login.setText("Login");
         btn_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,10 +144,11 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         loginjPanel.add(btn_login);
-        btn_login.setBounds(530, 330, 114, 29);
+        btn_login.setBounds(520, 330, 114, 27);
 
-        btn_donorRegisteration.setBackground(new java.awt.Color(255, 255, 255));
+        btn_donorRegisteration.setBackground(new java.awt.Color(0, 0, 0));
         btn_donorRegisteration.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
+        btn_donorRegisteration.setForeground(new java.awt.Color(255, 255, 255));
         btn_donorRegisteration.setText("Donor Registration");
         btn_donorRegisteration.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,7 +156,14 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         loginjPanel.add(btn_donorRegisteration);
-        btn_donorRegisteration.setBounds(434, 370, 370, 29);
+        btn_donorRegisteration.setBounds(420, 370, 350, 27);
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.gif"))); // NOI18N
+        jLabel1.setFocusable(false);
+        jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        loginjPanel.add(jLabel1);
+        jLabel1.setBounds(240, 40, 820, 660);
 
         logincontainer.add(loginjPanel, "card2");
 
@@ -167,7 +175,7 @@ public class MainJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_logoutActionPerformed
-        btn_logout.setEnabled(false);
+        //btn_logout.setEnabled(false);
         //btn_donorRegisteration.setEnabled(true);
         //txtusername.setEnabled(true);
         //txtpassword.setEnabled(true);
@@ -250,8 +258,8 @@ public class MainJFrame extends javax.swing.JFrame {
         //btn_login.setEnabled(false);
         btn_logout.setEnabled(true);
         //btn_donorRegisteration.setEnabled(false);
-        txtusername.setEnabled(false);
-        txtpassword.setEnabled(false);
+        //txtusername.setEnabled(false);
+        //txtpassword.setEnabled(false);
     }//GEN-LAST:event_btn_loginActionPerformed
 
     private void btn_donorRegisterationRegisterationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_donorRegisterationRegisterationActionPerformed
@@ -300,10 +308,10 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_donorRegisteration;
     private javax.swing.JButton btn_login;
     private javax.swing.JButton btn_logout;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lblusername;
-    private javax.swing.JLabel loginJLabel;
     private javax.swing.JPanel logincontainer;
     private javax.swing.JPanel loginjPanel;
     private javax.swing.JPanel logoutjPanel;

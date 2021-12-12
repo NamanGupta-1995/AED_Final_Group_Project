@@ -35,7 +35,7 @@ public abstract class Organization {
         PoliciesFinance("Policies and Finance"),
         AwarnessEvent("Awarness Event"),
         User("User"),
-        PhysioTherapist("Physio Therapist");
+        Physio("Physio Therapist");
         
         private String value;
         

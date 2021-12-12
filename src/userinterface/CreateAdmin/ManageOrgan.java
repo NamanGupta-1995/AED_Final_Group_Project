@@ -74,7 +74,6 @@ public class ManageOrgan extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         lblMatch = new javax.swing.JLabel();
 
-        tblOrganworkRequests.setForeground(new java.awt.Color(153, 51, 0));
         tblOrganworkRequests.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -98,8 +97,8 @@ public class ManageOrgan extends javax.swing.JPanel {
         tblOrganworkRequests.setSelectionForeground(new java.awt.Color(255, 255, 51));
         tblPatientData.setViewportView(tblOrganworkRequests);
 
-        btnAssignRequest.setBackground(new java.awt.Color(0, 102, 153));
-        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        btnAssignRequest.setBackground(new java.awt.Color(255, 0, 51));
+        btnAssignRequest.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnAssignRequest.setText("Assign");
         btnAssignRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,6 +106,8 @@ public class ManageOrgan extends javax.swing.JPanel {
             }
         });
 
+        cmbxfacilityProcurement.setBackground(new java.awt.Color(255, 0, 51));
+        cmbxfacilityProcurement.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         cmbxfacilityProcurement.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbxfacilityProcurement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +115,8 @@ public class ManageOrgan extends javax.swing.JPanel {
             }
         });
 
-        btnProcureOrgan.setBackground(new java.awt.Color(0, 102, 153));
-        btnProcureOrgan.setForeground(new java.awt.Color(255, 255, 255));
+        btnProcureOrgan.setBackground(new java.awt.Color(255, 0, 51));
+        btnProcureOrgan.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnProcureOrgan.setText("Procure");
         btnProcureOrgan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,12 +137,12 @@ public class ManageOrgan extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblDonorData);
 
-        lblTitle.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(255, 0, 51));
         lblTitle.setText("Organ Procurement Requests");
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 153));
+        btnBack.setBackground(new java.awt.Color(255, 0, 51));
         btnBack.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,50 +150,92 @@ public class ManageOrgan extends javax.swing.JPanel {
             }
         });
 
+        lblMatch.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblMatch.setForeground(new java.awt.Color(255, 0, 51));
         lblMatch.setText("Organ Matching Requests");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblMatch)
-                    .addComponent(btnBack)
-                    .addComponent(lblTitle)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(btnProcureOrgan, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(38, 38, 38)
-                            .addComponent(cmbxfacilityProcurement, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(28, 28, 28)
-                            .addComponent(btnAssignRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(tblPatientData, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(294, 294, 294))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnProcureOrgan, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(cmbxfacilityProcurement, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnAssignRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tblPatientData, javax.swing.GroupLayout.PREFERRED_SIZE, 874, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnBack)
+                                .addGap(169, 169, 169)
+                                .addComponent(lblTitle))))
+                    .addComponent(jScrollPane2))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(241, 241, 241)
+                .addComponent(lblMatch)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(lblTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTitle)
+                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
                 .addComponent(tblPatientData, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnProcureOrgan, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmbxfacilityProcurement, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAssignRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
+                    .addComponent(btnAssignRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnProcureOrgan, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(76, 76, 76)
                 .addComponent(lblMatch)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnProcureOrganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcureOrganActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = tblOrganworkRequests.getSelectedRow();
+        if(selectedRow < 0) {
+            JOptionPane.showMessageDialog(null,"Please Select a row from table first", "Warining", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        OrganProcureWorkRequest orgwr = (OrganProcureWorkRequest)tblOrganworkRequests.getValueAt(selectedRow, 0);
+        if(orgwr.getStatus().equalsIgnoreCase("procurement requested")) {
+            orgwr.setStatus("Work Started");
+        }
+
+        else {
+            JOptionPane.showMessageDialog(null, "Order is already ready Procured");
+            return;
+        }
+
+        populateJTableData();
+    }//GEN-LAST:event_btnProcureOrganActionPerformed
+
+    private void cmbxfacilityProcurementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbxfacilityProcurementActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbxfacilityProcurementActionPerformed
 
     private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
         // TODO add your handling code here:
@@ -229,38 +272,6 @@ public class ManageOrgan extends javax.swing.JPanel {
         populateJTableData();
         populateComboBoxesData();
     }//GEN-LAST:event_btnAssignRequestActionPerformed
-
-    private void cmbxfacilityProcurementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbxfacilityProcurementActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbxfacilityProcurementActionPerformed
-
-    private void btnProcureOrganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcureOrganActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = tblOrganworkRequests.getSelectedRow();
-        if(selectedRow < 0) {
-            JOptionPane.showMessageDialog(null,"Please Select a row from table first", "Warining", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-
-        OrganProcureWorkRequest orgwr = (OrganProcureWorkRequest)tblOrganworkRequests.getValueAt(selectedRow, 0);
-        if(orgwr.getStatus().equalsIgnoreCase("procurement requested")) {
-            orgwr.setStatus("Work Started");
-        }
-
-        else {
-            JOptionPane.showMessageDialog(null, "Order is already ready Procured");
-            return;
-        }
-
-        populateJTableData();
-    }//GEN-LAST:event_btnProcureOrganActionPerformed
-
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
-        userProcessContainer.remove(this);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
 
     
     public void matchDonorWithPatient(){

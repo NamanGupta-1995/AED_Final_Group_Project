@@ -180,9 +180,6 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
                 .addGap(37, 37, 37)
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnDeleteCity, btn_add_new_city});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -246,25 +243,7 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btn_back_buttonActionPerformed
 
-    private void btnDeleteCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteCityActionPerformed
-        // TODO add your handling code here:
-                int selectedRowIndex = tbl_list_of_network.getSelectedRow();
-        
-        if(selectedRowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select a row to delete.");
-            return;
-        }
-        
-        DefaultTableModel model = (DefaultTableModel) tbl_list_of_network.getModel();
-        String selectedNetwork =  model.getValueAt(selectedRowIndex, 0).toString();
-        Network network = system.getNetworkByName(selectedNetwork);
-        system.deleteNetwork(network);
-        LoadNetworkTable();
-        
-    }//GEN-LAST:event_btnDeleteCityActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDeleteCity;
     private javax.swing.JButton btn_add_new_city;
     private javax.swing.JButton btn_back_button;
     private javax.swing.JLabel jLabel1;

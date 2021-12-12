@@ -121,7 +121,7 @@ public class RequestOrganJpanel extends javax.swing.JPanel {
         jLabel8.setText("Urgency :");
 
         request_organ_combo_box.setBackground(new java.awt.Color(255, 0, 51));
-        request_organ_combo_box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Heart", "Kidney", "Liver", "Lungs", "Pancreas", "Intestines" }));
+        request_organ_combo_box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Heart", "Kidney", "Liver" }));
 
         age_comboBox.setBackground(new java.awt.Color(255, 0, 51));
         age_comboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "0-20", "20-35", "35-50", "50-65", ">65" }));

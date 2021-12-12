@@ -200,7 +200,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Patient Id", "Patient Name", "Message by Doctor", "Lab Assistant", "Status", "Result"
+                "Patient Id", "Patient Name", "Message by Doctor", "Lab Assistant", "Status", "Therapy"
             }
         ) {
             Class[] types = new Class [] {

@@ -78,17 +78,18 @@ public class MainJFrame extends javax.swing.JFrame {
         btn_login = new javax.swing.JButton();
         btn_donorRegisteration = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        logoutjPanel.setBackground(new java.awt.Color(0, 255, 204));
+        logoutjPanel.setBackground(new java.awt.Color(255, 255, 255));
         logoutjPanel.setMinimumSize(new java.awt.Dimension(100, 200));
         logoutjPanel.setPreferredSize(new java.awt.Dimension(250, 1080));
         logoutjPanel.setLayout(null);
 
         btn_logout.setBackground(new java.awt.Color(51, 51, 51));
         btn_logout.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_logout.setForeground(new java.awt.Color(255, 0, 51));
+        btn_logout.setForeground(new java.awt.Color(255, 255, 255));
         btn_logout.setText("Logout");
         btn_logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +97,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         logoutjPanel.add(btn_logout);
-        btn_logout.setBounds(0, 10, 100, 27);
+        btn_logout.setBounds(0, 500, 100, 27);
 
         jSplitPane1.setLeftComponent(logoutjPanel);
 
@@ -118,21 +119,21 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         loginjPanel.add(txtusername);
-        txtusername.setBounds(440, 248, 360, 30);
+        txtusername.setBounds(390, 300, 360, 40);
 
         lblusername.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
         lblusername.setText("Username:");
         loginjPanel.add(lblusername);
-        lblusername.setBounds(332, 260, 90, 18);
+        lblusername.setBounds(300, 310, 90, 30);
 
         lblpassword.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
         lblpassword.setText("Password:");
         loginjPanel.add(lblpassword);
-        lblpassword.setBounds(330, 300, 90, 18);
+        lblpassword.setBounds(300, 360, 90, 30);
 
         txtpassword.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         loginjPanel.add(txtpassword);
-        txtpassword.setBounds(440, 288, 362, 30);
+        txtpassword.setBounds(390, 350, 362, 40);
 
         btn_login.setBackground(new java.awt.Color(0, 0, 0));
         btn_login.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
@@ -144,26 +145,32 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         loginjPanel.add(btn_login);
-        btn_login.setBounds(520, 330, 114, 27);
+        btn_login.setBounds(470, 400, 114, 27);
 
-        btn_donorRegisteration.setBackground(new java.awt.Color(0, 0, 0));
+        btn_donorRegisteration.setBackground(new java.awt.Color(255, 0, 51));
         btn_donorRegisteration.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
-        btn_donorRegisteration.setForeground(new java.awt.Color(255, 255, 255));
-        btn_donorRegisteration.setText("Donor Registration");
+        btn_donorRegisteration.setText("Want to become a Donor?");
         btn_donorRegisteration.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_donorRegisterationRegisterationActionPerformed(evt);
             }
         });
         loginjPanel.add(btn_donorRegisteration);
-        btn_donorRegisteration.setBounds(420, 370, 350, 27);
+        btn_donorRegisteration.setBounds(600, 620, 250, 27);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.gif"))); // NOI18N
         jLabel1.setFocusable(false);
         jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         loginjPanel.add(jLabel1);
-        jLabel1.setBounds(240, 40, 820, 660);
+        jLabel1.setBounds(220, 110, 810, 580);
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel2.setText("Organ Management System");
+        loginjPanel.add(jLabel2);
+        jLabel2.setBounds(270, 0, 690, 120);
 
         logincontainer.add(loginjPanel, "card2");
 
@@ -309,6 +316,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_login;
     private javax.swing.JButton btn_logout;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lblusername;

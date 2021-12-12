@@ -227,14 +227,11 @@
           <Color blue="33" green="0" red="ff" type="rgb"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
+          <StringArray count="4">
             <StringItem index="0" value="--Select--"/>
             <StringItem index="1" value="Heart"/>
             <StringItem index="2" value="Kidney"/>
             <StringItem index="3" value="Liver"/>
-            <StringItem index="4" value="Lungs"/>
-            <StringItem index="5" value="Pancreas"/>
-            <StringItem index="6" value="Intestines"/>
           </StringArray>
         </Property>
       </Properties>

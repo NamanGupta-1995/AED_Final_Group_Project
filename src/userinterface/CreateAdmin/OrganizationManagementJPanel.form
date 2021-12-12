@@ -25,33 +25,42 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblCreateOrganization" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblCreateOrganization" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="lblOrganizationName" min="-2" pref="185" max="-2" attributes="0"/>
                                   <Component id="lblOrganizationType" alignment="1" min="-2" pref="185" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btnCreateOrganization" max="32767" attributes="0"/>
-                                  <Component id="cmbxOrganizationType" max="32767" attributes="0"/>
-                                  <Component id="txtOrganizationName" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                  <Component id="cmbxOrganizationType" pref="234" max="32767" attributes="0"/>
+                                  <Component id="txtOrganizationName" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Component id="btnCreateOrganization" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="tblOrganization" min="-2" pref="785" max="-2" attributes="0"/>
-                              <Component id="lblPresentOrganization" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblPresentOrganization" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tblOrganization" min="-2" pref="550" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="324" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="326" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -66,28 +75,28 @@
                   <Component id="lblCreateOrganization" min="-2" max="-2" attributes="0"/>
                   <Component id="btnBack" min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-              <Component id="lblPresentOrganization" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="tblOrganization" min="-2" pref="221" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cmbxOrganizationType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblOrganizationType" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cmbxOrganizationType" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblOrganizationType" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblOrganizationName" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtOrganizationName" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnCreateOrganization" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblPresentOrganization" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="tblOrganization" min="-2" pref="221" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel1" min="-2" pref="311" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="0" min="-2" pref="311" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="384" max="32767" attributes="0"/>
+              <EmptySpace pref="480" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

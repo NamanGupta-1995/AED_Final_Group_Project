@@ -47,7 +47,7 @@ public class OrganizationDirectory {
         }else if(type.getValue().equals(getRole.AwarnessEvent.getValue())){
              org = new AwarnessEvent(name);
             listOfOrganizations.add(org);
-        }else if(type.getValue().equals(getRole.PhysioTherapist.getValue())){
+        }else if(type.getValue().equals(getRole.Physio.getValue())){
              org = new PhysioTherapist(name);
              listOfOrganizations.add(org);
         }

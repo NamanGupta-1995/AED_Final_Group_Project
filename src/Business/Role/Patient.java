@@ -13,7 +13,7 @@ import Business.Person.DonorsDirectory;
 import Business.Users.Users;
 import javax.swing.JPanel;
 import userinterface.CreateAdmin.AdminWorkAreaJPanel;
-import userinterface.PatientsRole.PatientsJPanel;
+import userinterface.PatientRole.PatientJPanel;
 
 /**
  *
@@ -24,7 +24,7 @@ public class Patient extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, Users userAccount, Organization organization, Enterprise enterprise, EcoSystem ecosystem,
             Network network, DonorsDirectory donorDirectory) {
-        return new PatientsJPanel(userProcessContainer, enterprise);
+        return new PatientJPanel(userProcessContainer, enterprise);
     }
 
 }

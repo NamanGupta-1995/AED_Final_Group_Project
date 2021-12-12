@@ -64,12 +64,14 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         tbl_list_of_donors = new javax.swing.JTable();
         lbl_list_of_donors = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1200, 800));
         setPreferredSize(new java.awt.Dimension(1200, 800));
 
-        lbl_ngo_title.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        lbl_ngo_title.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lbl_ngo_title.setForeground(new java.awt.Color(255, 0, 51));
         lbl_ngo_title.setText("Event Fund Requests ");
 
         tbl_list_of_events.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -99,8 +101,7 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
 
         btn_accept.setBackground(new java.awt.Color(0, 102, 153));
         btn_accept.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        btn_accept.setForeground(new java.awt.Color(255, 255, 255));
-        btn_accept.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/acccept.png"))); // NOI18N
+        btn_accept.setForeground(new java.awt.Color(255, 0, 51));
         btn_accept.setText("ACCEPT");
         btn_accept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,8 +111,7 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
 
         btn_decline.setBackground(new java.awt.Color(0, 102, 153));
         btn_decline.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        btn_decline.setForeground(new java.awt.Color(255, 255, 255));
-        btn_decline.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/unavailable_16px.png"))); // NOI18N
+        btn_decline.setForeground(new java.awt.Color(255, 0, 51));
         btn_decline.setText("DECLINE");
         btn_decline.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,29 +143,39 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
         tbl_list_of_donors.setSelectionForeground(new java.awt.Color(255, 255, 51));
         jScrollPane2.setViewportView(tbl_list_of_donors);
 
-        lbl_list_of_donors.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        lbl_list_of_donors.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lbl_list_of_donors.setForeground(new java.awt.Color(255, 0, 51));
         lbl_list_of_donors.setText("List of Donors ");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/healthofficer.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(139, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_accept)
-                        .addGap(34, 34, 34)
-                        .addComponent(btn_decline))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 982, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 986, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_accept)
+                .addGap(34, 34, 34)
+                .addComponent(btn_decline)
                 .addGap(75, 75, 75))
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_ngo_title)
-                    .addComponent(lbl_list_of_donors, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(199, 199, 199))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(316, 316, 316)
+                        .addComponent(lbl_ngo_title))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 511, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_list_of_donors, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn_accept, btn_decline});
@@ -173,19 +183,24 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap()
                 .addComponent(lbl_ngo_title)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_accept)
                     .addComponent(btn_decline))
-                .addGap(52, 52, 52)
-                .addComponent(lbl_list_of_donors)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(374, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(lbl_list_of_donors)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn_accept, btn_decline});
@@ -225,6 +240,7 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_accept;
     private javax.swing.JButton btn_decline;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lbl_list_of_donors;

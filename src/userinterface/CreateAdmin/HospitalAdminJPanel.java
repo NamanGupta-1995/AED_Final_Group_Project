@@ -42,19 +42,22 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
         btn_manage_organization = new javax.swing.JButton();
         btn_manage_employees = new javax.swing.JButton();
         btn_manage_patients = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1200, 800));
         setPreferredSize(new java.awt.Dimension(1200, 800));
 
+        lbl_admin_dashboard_heading.setBackground(new java.awt.Color(255, 0, 51));
         lbl_admin_dashboard_heading.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
         lbl_admin_dashboard_heading.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_admin_dashboard_heading.setText("ADMIN DASHBOARD");
 
-        btn_manage_users.setBackground(new java.awt.Color(0, 102, 153));
-        btn_manage_users.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_users.setForeground(java.awt.Color.white);
-        btn_manage_users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageUserAccount1.png"))); // NOI18N
+        btn_manage_users.setBackground(new java.awt.Color(255, 0, 51));
+        btn_manage_users.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_manage_users.setText("Manage User Accounts");
         btn_manage_users.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,10 +65,8 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_organization.setBackground(new java.awt.Color(0, 102, 153));
-        btn_manage_organization.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_organization.setForeground(java.awt.Color.white);
-        btn_manage_organization.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageOraganisation.png"))); // NOI18N
+        btn_manage_organization.setBackground(new java.awt.Color(255, 0, 51));
+        btn_manage_organization.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_manage_organization.setText("Manage Organization");
         btn_manage_organization.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,10 +74,8 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_employees.setBackground(new java.awt.Color(0, 102, 153));
-        btn_manage_employees.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_employees.setForeground(java.awt.Color.white);
-        btn_manage_employees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageEmployees.png"))); // NOI18N
+        btn_manage_employees.setBackground(new java.awt.Color(255, 0, 51));
+        btn_manage_employees.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_manage_employees.setText("Manage Employees");
         btn_manage_employees.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,16 +83,22 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_patients.setBackground(new java.awt.Color(0, 102, 153));
-        btn_manage_patients.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_patients.setForeground(java.awt.Color.white);
-        btn_manage_patients.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManagePatient.png"))); // NOI18N
+        btn_manage_patients.setBackground(new java.awt.Color(255, 0, 51));
+        btn_manage_patients.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_manage_patients.setText("Manage Patients");
         btn_manage_patients.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_manage_patientsActionPerformed(evt);
             }
         });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/animation_200_kx1jb56r.gif"))); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ezgif-4-19244d407726.gif"))); // NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/animation_200_kx1jfuvv.gif"))); // NOI18N
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/animation_300_kx1me69h.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -102,33 +107,56 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(144, 144, 144)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_manage_organization, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_manage_employees, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(50, 50, 50)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(100, 100, 100)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btn_manage_organization, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
+                                    .addComponent(btn_manage_employees, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(97, 97, 97)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(88, 88, 88)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_manage_users, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_manage_patients, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(48, 48, 48))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btn_manage_users, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn_manage_patients, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(343, 343, 343)
-                        .addComponent(lbl_admin_dashboard_heading, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(786, 786, 786))
+                        .addGap(32, 32, 32)
+                        .addComponent(lbl_admin_dashboard_heading, javax.swing.GroupLayout.PREFERRED_SIZE, 788, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(lbl_admin_dashboard_heading)
-                .addGap(81, 81, 81)
-                .addComponent(btn_manage_organization)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_manage_users, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_manage_employees, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(13, 13, 13)
-                .addComponent(btn_manage_patients, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(516, 516, 516))
+                .addComponent(lbl_admin_dashboard_heading)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_manage_organization)
+                    .addComponent(btn_manage_users))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_manage_employees)
+                    .addComponent(btn_manage_patients, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(191, 191, 191))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -168,6 +196,10 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btn_manage_organization;
     private javax.swing.JButton btn_manage_patients;
     private javax.swing.JButton btn_manage_users;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lbl_admin_dashboard_heading;
     // End of variables declaration//GEN-END:variables
     

@@ -42,19 +42,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="txtDate" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtAmount" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtComments" alignment="0" max="32767" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="txtHours" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
-                                              <Component id="txtMInutes" min="-2" pref="90" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="txtVenueName" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="txtVenueName" min="-2" pref="191" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
@@ -67,7 +55,17 @@
                                   <Component id="lblAmount" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="txtEventName" min="-2" pref="191" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtEventName" min="-2" pref="191" max="-2" attributes="0"/>
+                                  <Component id="txtAmount" alignment="0" min="-2" pref="188" max="-2" attributes="0"/>
+                                  <Component id="txtComments" min="-2" pref="188" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="txtHours" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                                      <Component id="txtMInutes" min="-2" pref="90" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtDate" min="-2" pref="188" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -106,22 +104,16 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="txtVenueName" linkSize="2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="txtDate" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="txtMInutes" linkSize="2" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
                                           <Component id="txtHours" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="txtComments" linkSize="2" min="-2" pref="29" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="txtAmount" linkSize="2" min="-2" pref="32" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="btnCreateEvent" linkSize="2" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="lblVenueName" linkSize="2" min="-2" max="-2" attributes="0"/>
@@ -129,10 +121,21 @@
                                       <Component id="lblDate" linkSize="2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="lblTime" linkSize="2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblComments" linkSize="2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="lblAmount" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="txtComments" linkSize="2" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                      <Component id="txtAmount" linkSize="2" min="-2" pref="32" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                      <Component id="btnCreateEvent" linkSize="2" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>

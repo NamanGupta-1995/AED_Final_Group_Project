@@ -143,8 +143,8 @@ public class OrganizationManagementJPanel extends javax.swing.JPanel {
             }
         });
 
+        cmbxOrganizationType.setBackground(new java.awt.Color(255, 0, 51));
         cmbxOrganizationType.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        cmbxOrganizationType.setForeground(new java.awt.Color(255, 0, 51));
         cmbxOrganizationType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         lblOrganizationType.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -152,9 +152,8 @@ public class OrganizationManagementJPanel extends javax.swing.JPanel {
         lblOrganizationType.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblOrganizationType.setText("Organization Type :");
 
-        btnBack.setBackground(new java.awt.Color(0, 51, 102));
+        btnBack.setBackground(new java.awt.Color(255, 0, 51));
         btnBack.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 0, 51));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -41,18 +41,20 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         btn_manage_users = new javax.swing.JButton();
         btn_manage_organization = new javax.swing.JButton();
         btn_manage_employees = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new java.awt.Dimension(1200, 800));
 
         txt_Admin_Dashboard.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        txt_Admin_Dashboard.setForeground(new java.awt.Color(255, 0, 51));
         txt_Admin_Dashboard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt_Admin_Dashboard.setText("ADMIN DASHBOARD");
 
-        btn_manage_users.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_users.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_users.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_users.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageUserAccount1.png"))); // NOI18N
         btn_manage_users.setText("   Manage User Accounts");
         btn_manage_users.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,10 +62,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_organization.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_organization.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_organization.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_organization.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_organization.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageOraganisation.png"))); // NOI18N
         btn_manage_organization.setText("  Manage Organization");
         btn_manage_organization.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,10 +71,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_employees.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_employees.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_employees.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btn_manage_employees.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_employees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageEmployees.png"))); // NOI18N
         btn_manage_employees.setText("Manage Employees");
         btn_manage_employees.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,39 +80,50 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/animation_200_kx1jfuvv.gif"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/animation_200_kx1jb56r.gif"))); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ezgif-4-19244d407726.gif"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(txt_Admin_Dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 983, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(260, 260, 260)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btn_manage_organization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_manage_employees, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addGap(262, 262, 262)
-                            .addComponent(btn_manage_users, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(661, 661, 661))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_manage_organization, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(105, 105, 105)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_manage_users, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(102, 102, 102)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_manage_employees, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txt_Admin_Dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 983, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(403, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(txt_Admin_Dashboard)
-                .addGap(52, 52, 52)
-                .addComponent(btn_manage_organization)
+                .addGap(123, 123, 123)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_manage_employees)
-                .addGap(12, 12, 12)
-                .addComponent(btn_manage_users)
-                .addContainerGap(565, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_manage_organization)
+                    .addComponent(btn_manage_users)
+                    .addComponent(btn_manage_employees))
+                .addContainerGap(362, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -145,6 +154,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btn_manage_employees;
     private javax.swing.JButton btn_manage_organization;
     private javax.swing.JButton btn_manage_users;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel txt_Admin_Dashboard;
     // End of variables declaration//GEN-END:variables
     

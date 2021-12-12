@@ -29,7 +29,7 @@ public class PhysioTherapist extends Organization{
     
     @Override
     public getRole getOrgType() {
-        return Organization.getRole.PhysioTherapist;
+        return Organization.getRole.Physio;
     } 
     
     

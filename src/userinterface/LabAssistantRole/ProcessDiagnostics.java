@@ -133,15 +133,15 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         txt_random2 = new javax.swing.JLabel();
         comboBox_random_three = new javax.swing.JComboBox();
         txt_random3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1200, 800));
         setPreferredSize(new java.awt.Dimension(1200, 800));
 
-        btn_generate_result.setBackground(new java.awt.Color(0, 102, 153));
+        btn_generate_result.setBackground(new java.awt.Color(255, 0, 51));
         btn_generate_result.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_generate_result.setForeground(new java.awt.Color(255, 255, 255));
-        btn_generate_result.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/test_passed_30px.png"))); // NOI18N
         btn_generate_result.setText("Generate Result");
         btn_generate_result.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,15 +150,15 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         });
 
         txt_result.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_result.setForeground(new java.awt.Color(255, 0, 51));
         txt_result.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_result.setText("Result:");
 
         txt_result_comment_val.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
 
-        btn_back.setBackground(new java.awt.Color(0, 102, 153));
+        btn_back.setBackground(new java.awt.Color(255, 0, 51));
         btn_back.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_back.setForeground(new java.awt.Color(255, 255, 255));
-        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back3.png"))); // NOI18N
         btn_back.setText("Back");
         btn_back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,20 +167,25 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         });
 
         txt_bloodtyping.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_bloodtyping.setForeground(new java.awt.Color(255, 0, 51));
         txt_bloodtyping.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_bloodtyping.setText("Blood Typing");
 
         txt_survival.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_survival.setForeground(new java.awt.Color(255, 0, 51));
         txt_survival.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_survival.setText("Survival Capability");
 
         txt_antibodies.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_antibodies.setForeground(new java.awt.Color(255, 0, 51));
         txt_antibodies.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_antibodies.setText("Reactive Antibodies");
 
+        comboBox_blood_Typing.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_blood_Typing.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_blood_Typing.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Normal ", "Abnormal", " " }));
 
+        comboBox_survival_capability.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_survival_capability.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_survival_capability.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Normal ", "Abnormal", " " }));
         comboBox_survival_capability.addActionListener(new java.awt.event.ActionListener() {
@@ -189,6 +194,7 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
             }
         });
 
+        comboBox_reactive_anti_bodies.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_reactive_anti_bodies.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_reactive_anti_bodies.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "10%-20%", "20%-40%", "40%-60%", "60%-80%", ">80%", " " }));
         comboBox_reactive_anti_bodies.addActionListener(new java.awt.event.ActionListener() {
@@ -198,9 +204,11 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         });
 
         txt_random1.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_random1.setForeground(new java.awt.Color(255, 0, 51));
         txt_random1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_random1.setText("Random:");
 
+        comboBox_random_one.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_random_one.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_random_one.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Normal ", "Abnormal", " " }));
         comboBox_random_one.addActionListener(new java.awt.event.ActionListener() {
@@ -209,25 +217,33 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
             }
         });
 
-        lbl_lab_test.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        lbl_lab_test.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lbl_lab_test.setForeground(new java.awt.Color(255, 0, 51));
         lbl_lab_test.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_lab_test.setText("LAB TESTS");
 
         lbl_wbcCount.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        lbl_wbcCount.setForeground(new java.awt.Color(255, 0, 51));
         lbl_wbcCount.setText("WBC Count");
 
         lbl_liver.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        lbl_liver.setForeground(new java.awt.Color(255, 0, 51));
         lbl_liver.setText("Liver Culture");
 
         lbl_kidney.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        lbl_kidney.setForeground(new java.awt.Color(255, 0, 51));
         lbl_kidney.setText("Kidney Culture :");
 
+        comboBox_whiteBloodCells.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_whiteBloodCells.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Normal ", "Abnormal" }));
 
+        comboBox_liver_culture.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_liver_culture.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Normal ", "Abnormal" }));
 
+        comboBox_kidney_culture.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_kidney_culture.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Normal ", "Abnormal" }));
 
+        comboBox_random_two.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_random_two.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_random_two.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Normal ", "Abnormal", " " }));
         comboBox_random_two.addActionListener(new java.awt.event.ActionListener() {
@@ -237,9 +253,11 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         });
 
         txt_random2.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_random2.setForeground(new java.awt.Color(255, 0, 51));
         txt_random2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_random2.setText("Random:");
 
+        comboBox_random_three.setBackground(new java.awt.Color(255, 0, 51));
         comboBox_random_three.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         comboBox_random_three.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Normal ", "Abnormal", " " }));
         comboBox_random_three.addActionListener(new java.awt.event.ActionListener() {
@@ -249,61 +267,66 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         });
 
         txt_random3.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        txt_random3.setForeground(new java.awt.Color(255, 0, 51));
         txt_random3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txt_random3.setText("Random:");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ezgif-4-37cca7096269.gif"))); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(390, 532));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_back)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_lab_test, javax.swing.GroupLayout.PREFERRED_SIZE, 768, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(btn_back))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(183, 183, 183)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl_lab_test, javax.swing.GroupLayout.PREFERRED_SIZE, 768, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(txt_antibodies)
+                                        .addComponent(txt_survival)
+                                        .addComponent(txt_bloodtyping)
+                                        .addComponent(lbl_wbcCount)
+                                        .addComponent(lbl_liver)
+                                        .addComponent(lbl_kidney)
+                                        .addComponent(txt_random1)
+                                        .addComponent(txt_random2)
+                                        .addComponent(txt_random3))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(comboBox_liver_culture, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_kidney_culture, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_blood_Typing, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_survival_capability, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_reactive_anti_bodies, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_whiteBloodCells, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_random_one, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_random_two, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(comboBox_random_three, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(txt_result)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(txt_result_comment_val, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(211, 211, 211)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(txt_antibodies)
-                                            .addComponent(txt_survival)
-                                            .addComponent(txt_bloodtyping)
-                                            .addComponent(lbl_wbcCount)
-                                            .addComponent(lbl_liver)
-                                            .addComponent(lbl_kidney)
-                                            .addComponent(txt_random1)
-                                            .addComponent(txt_random2)
-                                            .addComponent(txt_random3))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(comboBox_liver_culture, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_kidney_culture, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_blood_Typing, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_survival_capability, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_reactive_anti_bodies, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_whiteBloodCells, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_random_one, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_random_two, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(comboBox_random_three, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(txt_result)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txt_result_comment_val, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(384, 384, 384)
-                                .addComponent(btn_generate_result, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(249, Short.MAX_VALUE))
+                                .addGap(173, 173, 173)
+                                .addComponent(btn_generate_result, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(lbl_lab_test)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_lab_test)
+                    .addComponent(btn_back, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_bloodtyping)
@@ -312,43 +335,44 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txt_survival)
                     .addComponent(comboBox_survival_capability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_antibodies)
                     .addComponent(comboBox_reactive_anti_bodies, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_wbcCount)
-                    .addComponent(comboBox_whiteBloodCells, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_liver)
-                    .addComponent(comboBox_liver_culture, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_kidney)
-                    .addComponent(comboBox_kidney_culture, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_random1)
-                    .addComponent(comboBox_random_one, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboBox_random_two, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_random2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_random3)
-                    .addComponent(comboBox_random_three, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_result_comment_val, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_result))
-                .addGap(18, 18, 18)
-                .addComponent(btn_generate_result, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(btn_back, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbl_wbcCount)
+                            .addComponent(comboBox_whiteBloodCells, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_liver)
+                            .addComponent(comboBox_liver_culture, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbl_kidney)
+                            .addComponent(comboBox_kidney_culture, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txt_random1)
+                            .addComponent(comboBox_random_one, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(comboBox_random_two, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_random2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txt_random3)
+                            .addComponent(comboBox_random_three, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txt_result_comment_val, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_result))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_generate_result, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -457,6 +481,7 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
     private javax.swing.JComboBox comboBox_reactive_anti_bodies;
     private javax.swing.JComboBox comboBox_survival_capability;
     private javax.swing.JComboBox<String> comboBox_whiteBloodCells;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbl_kidney;
     private javax.swing.JLabel lbl_lab_test;
     private javax.swing.JLabel lbl_liver;

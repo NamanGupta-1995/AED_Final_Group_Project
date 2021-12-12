@@ -39,23 +39,22 @@ public class OrganBankJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txt_admin_dashboard = new javax.swing.JLabel();
         btn_manage_users = new javax.swing.JButton();
         btn_manage_organization = new javax.swing.JButton();
         btn_manage_employees = new javax.swing.JButton();
         btn_view_request = new javax.swing.JButton();
+        txt_admin_dashboard = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new java.awt.Dimension(1200, 800));
 
-        txt_admin_dashboard.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
-        txt_admin_dashboard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txt_admin_dashboard.setText("ADMIN DASHBOARD");
-
-        btn_manage_users.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_users.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_users.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_manage_users.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageUserAccount1.png"))); // NOI18N
         btn_manage_users.setText("Manage User Accounts");
         btn_manage_users.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,10 +62,9 @@ public class OrganBankJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_organization.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_organization.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_organization.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_manage_organization.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_organization.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageOraganisation.png"))); // NOI18N
         btn_manage_organization.setText("Manage Organization");
         btn_manage_organization.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,10 +72,9 @@ public class OrganBankJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_manage_employees.setBackground(new java.awt.Color(0, 102, 153));
+        btn_manage_employees.setBackground(new java.awt.Color(255, 0, 51));
         btn_manage_employees.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_manage_employees.setForeground(new java.awt.Color(255, 255, 255));
-        btn_manage_employees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdminDashboardManageEmployees.png"))); // NOI18N
         btn_manage_employees.setText("Manage Employees");
         btn_manage_employees.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,10 +82,9 @@ public class OrganBankJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_view_request.setBackground(new java.awt.Color(0, 102, 153));
+        btn_view_request.setBackground(new java.awt.Color(255, 0, 51));
         btn_view_request.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btn_view_request.setForeground(new java.awt.Color(255, 255, 255));
-        btn_view_request.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/view.png"))); // NOI18N
         btn_view_request.setText("View Requests");
         btn_view_request.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,40 +92,70 @@ public class OrganBankJPanel extends javax.swing.JPanel {
             }
         });
 
+        txt_admin_dashboard.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txt_admin_dashboard.setForeground(new java.awt.Color(255, 0, 51));
+        txt_admin_dashboard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt_admin_dashboard.setText("ADMIN DASHBOARD");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-organization-chart-people-100.png"))); // NOI18N
+
+        jLabel2.setBackground(new java.awt.Color(255, 0, 51));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/istockphoto-1256423068-170667a_1_261x244.jpg"))); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/appointment-request-icon-vector-15958574.jpg"))); // NOI18N
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/employee-icon-design-template-isolated-vector-24295645_261x244.jpg"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txt_admin_dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 916, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(txt_admin_dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 916, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(182, 182, 182)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btn_manage_users, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_manage_employees, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_manage_organization, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_view_request, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(209, Short.MAX_VALUE))
+                        .addGap(128, 128, 128)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btn_manage_employees, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_manage_organization, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_view_request, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_manage_users, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(400, 400, 400))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn_manage_employees, btn_manage_organization, btn_manage_users, btn_view_request});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addContainerGap()
                 .addComponent(txt_admin_dashboard)
-                .addGap(35, 35, 35)
-                .addComponent(btn_manage_organization)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_manage_users)
+                    .addComponent(btn_manage_organization))
                 .addGap(18, 18, 18)
-                .addComponent(btn_manage_employees)
-                .addGap(18, 18, 18)
-                .addComponent(btn_manage_users)
-                .addGap(18, 18, 18)
-                .addComponent(btn_view_request)
-                .addContainerGap(450, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_manage_employees)
+                    .addComponent(btn_view_request))
+                .addGap(428, 428, 428))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn_manage_employees, btn_manage_organization, btn_manage_users});
@@ -172,6 +198,10 @@ public class OrganBankJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btn_manage_organization;
     private javax.swing.JButton btn_manage_users;
     private javax.swing.JButton btn_view_request;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel txt_admin_dashboard;
     // End of variables declaration//GEN-END:variables
     

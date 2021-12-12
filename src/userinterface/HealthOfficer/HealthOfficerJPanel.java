@@ -99,9 +99,8 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
         tbl_list_of_events.setSelectionForeground(new java.awt.Color(255, 255, 51));
         jScrollPane1.setViewportView(tbl_list_of_events);
 
-        btn_accept.setBackground(new java.awt.Color(0, 102, 153));
+        btn_accept.setBackground(new java.awt.Color(255, 0, 51));
         btn_accept.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        btn_accept.setForeground(new java.awt.Color(255, 0, 51));
         btn_accept.setText("ACCEPT");
         btn_accept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,9 +108,8 @@ public class HealthOfficerJPanel extends javax.swing.JPanel {
             }
         });
 
-        btn_decline.setBackground(new java.awt.Color(0, 102, 153));
+        btn_decline.setBackground(new java.awt.Color(255, 0, 51));
         btn_decline.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        btn_decline.setForeground(new java.awt.Color(255, 0, 51));
         btn_decline.setText("DECLINE");
         btn_decline.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

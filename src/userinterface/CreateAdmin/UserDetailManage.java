@@ -150,7 +150,6 @@ public class UserDetailManage extends javax.swing.JPanel {
 
         btnCreateUser.setBackground(new java.awt.Color(255, 0, 51));
         btnCreateUser.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btnCreateUser.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateUser.setText("Create");
         btnCreateUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,8 +207,8 @@ public class UserDetailManage extends javax.swing.JPanel {
         lblEmployeeName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblEmployeeName.setText("Employee:");
 
+        cbEmployeeName.setBackground(new java.awt.Color(255, 0, 51));
         cbEmployeeName.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        cbEmployeeName.setForeground(new java.awt.Color(255, 0, 51));
         cbEmployeeName.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbEmployeeName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,9 +216,8 @@ public class UserDetailManage extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 153));
+        btnBack.setBackground(new java.awt.Color(255, 0, 51));
         btnBack.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,8 +230,8 @@ public class UserDetailManage extends javax.swing.JPanel {
         lblOrganization.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblOrganization.setText("Organization:");
 
+        cbOrganization.setBackground(new java.awt.Color(255, 0, 51));
         cbOrganization.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        cbOrganization.setForeground(new java.awt.Color(255, 0, 51));
         cbOrganization.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbOrganization.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,8 +244,8 @@ public class UserDetailManage extends javax.swing.JPanel {
         lblRole.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblRole.setText("Role:");
 
+        cbRole.setBackground(new java.awt.Color(255, 0, 51));
         cbRole.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        cbRole.setForeground(new java.awt.Color(255, 0, 51));
         cbRole.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbRole.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

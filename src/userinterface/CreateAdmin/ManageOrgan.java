@@ -320,14 +320,18 @@ public class ManageOrgan extends javax.swing.JPanel {
 
             if(n.getName().equalsIgnoreCase(network.getName())) { 
             for(Enterprise enterprise: n.getEnterpriseList().getEnterpriseList()){
+                System.out.println(enterprise);
                 if(enterprise instanceof OrganBankEnterprise){
                     if(enterprise.getWorkQueue()== null){
                         System.out.println("catched by repears");
                       break;
                     }
                     for(WorkRequest wr: enterprise.getWorkQueue().getWorkRequestList()){
+                        System.out.println("I am outside");
                         if(wr.getStatus().equalsIgnoreCase("procurement requested") ||wr.getStatus().equalsIgnoreCase("work started")|| wr.getStatus().equalsIgnoreCase("Assigned") ||wr.getStatus().equalsIgnoreCase("InProcess")||wr.getStatus()==null|| wr.getStatus().equalsIgnoreCase("Completed")){
+                            System.out.println("I am here bro");
                             if(wr instanceof OrganProcureWorkRequest){
+                                System.out.println("I am inside");
                             OrganProcureWorkRequest organProcurementWorkRequest = (OrganProcureWorkRequest)wr;
                             String a ="";
                             for( String s: organProcurementWorkRequest.getOrganList()){

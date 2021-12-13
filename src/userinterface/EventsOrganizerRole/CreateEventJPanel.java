@@ -312,9 +312,9 @@ public class CreateEventJPanel extends javax.swing.JPanel {
         for(Network network:system.getNetworkList()){
         for(Enterprise enterprise:network.getEnterpriseList().getEnterpriseList()){
         for(Organization organization:enterprise.getOrganizationDirectory().getListOfOrganizations()){
-         System.out.println("Siva"+organization.getOrgName());
+         System.out.println("Noordeep"+organization.getOrgName());
          if(organization instanceof FinanceEvent){
-         System.out.println("sai"+organization.getOrgName()); 
+         System.out.println("Garima"+organization.getOrgName()); 
          for (Users ua :organization.getUserAccountDirectory().getAccountList()){
                  
                 if(organization instanceof FinanceEvent){
@@ -328,7 +328,7 @@ public class CreateEventJPanel extends javax.swing.JPanel {
          request.setReceiver(ua);
                 break;} }
                     if (organization instanceof AwarnessEvent) {
-                        System.out.println("To know ORg "+organization);
+                        System.out.println("Naman "+organization);
                         org= organization;
                         break;
                     }

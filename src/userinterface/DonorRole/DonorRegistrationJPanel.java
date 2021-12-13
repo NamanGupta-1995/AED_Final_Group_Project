@@ -218,7 +218,7 @@ public class DonorRegistrationJPanel extends javax.swing.JPanel {
 
         organToDonateJComboBox.setBackground(new java.awt.Color(255, 0, 0));
         organToDonateJComboBox.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        organToDonateJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Heart", "Lungs", "Kidneys" }));
+        organToDonateJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Heart", "Liver", "Kidneys" }));
         organToDonateJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organToDonateJComboBoxActionPerformed(evt);

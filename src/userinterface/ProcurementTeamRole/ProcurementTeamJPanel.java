@@ -213,13 +213,15 @@ public class ProcurementTeamJPanel extends javax.swing.JPanel {
             if(n.getName().equalsIgnoreCase(network.getName())){
             for(Enterprise e: n.getEnterpriseList().getEnterpriseList()){
                 if(e instanceof OrganBankEnterprise){
+                    
                     if(e.getWorkQueue()== null){
-                        System.out.println("catched by repears");
+                        
                       break;}
                     for(WorkRequest wr: e.getWorkQueue().getWorkRequestList()){
+                        
                         if( wr.getStatus().equals("Assigned")|| wr.getStatus().equals("InProcess")|| wr.getStatus().equals("Completed")){
                             OrganProcureWorkRequest opr = (OrganProcureWorkRequest)wr;
-                            System.out.println("In Ark space ship");
+                            
                             String a ="";
                             for( String s: opr.getOrganList()){
                                 a= s+":"+a;

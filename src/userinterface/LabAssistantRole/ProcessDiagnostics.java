@@ -63,7 +63,7 @@ public class ProcessDiagnostics extends javax.swing.JPanel {
         List<JComboBox> cboxes = Arrays.asList(comboBox_random_one, comboBox_random_two, comboBox_random_three);
         int counter=0;
         
-        System.out.println("Test Array in lab process"+request.getTests());
+        
         for (String s : request.getTests()) {          
             
             if (s.equalsIgnoreCase("blood typing")) {
